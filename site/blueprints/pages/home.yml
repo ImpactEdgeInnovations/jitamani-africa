@@ -10,10 +10,10 @@ fields:
     label: First headline line
     type: text
   headlinesecond:
-    label: Second headline line
+    label: Second line after italic word
     type: text
   headlineaccent:
-    label: Accent word
+    label: Italic word starting second line
     type: text
   intro:
     type: textarea
@@ -23,17 +23,8 @@ fields:
     type: files
     query: site.images
     multiple: false
-  herocaption:
-    label: Photograph caption
-    type: text
   workheading:
     type: text
-  servicesheading:
-    type: textarea
-    buttons: false
-  servicesintro:
-    type: textarea
-    buttons: false
   metatitle:
     label: Search title
     type: text

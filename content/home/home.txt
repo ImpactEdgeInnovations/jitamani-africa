@@ -10,19 +10,19 @@ Description: Business development, event curation, marketing and sales. Explore 
 
 ----
 
-Eyebrow: Kenya / Business development & events
+Eyebrow: Rooted in Kenya. Open to possibility.
 
 ----
 
-Headline: Ideas with intent.
+Headline: Good ideas.
 
 ----
 
-Headlinesecond: Experiences with
+Headlinesecond: impact.
 
 ----
 
-Headlineaccent: impact.
+Headlineaccent: Lasting
 
 ----
 
@@ -34,7 +34,7 @@ Herocaption: The Chef and The Cook / An experience from our archive
 
 ----
 
-Workheading: A closer look at what we do.
+Workheading: Made to mean something.
 
 ----
 
@@ -49,7 +49,7 @@ Servicesintro: From the direction of a business to the details of an experience,
 
 ----
 
-Heroimage: dining.png
+Heroimage: mixologist.jpeg
 
 ----
 

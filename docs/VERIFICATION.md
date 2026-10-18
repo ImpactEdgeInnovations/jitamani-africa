@@ -25,3 +25,10 @@ The Kirby Panel setup page and editor definitions are verified. The owner still 
 cPanel PHP/extensions, rewrite handling, permissions, backup restoration, private inquiry location, HTTPS canonical redirects and any old application/login dependencies need verification on the actual account. The local PHP router checks are not proof that an uninspected Apache/nginx host is configured correctly.
 
 The layout/keyboard checks are not full WCAG certification. No physical-device/browser matrix, complete screen-reader audit, field Core Web Vitals or conversion-uplift measurement was performed. Review copy, image permissions and the final privacy/retention policy before launch.
+
+
+## Fresh design implementation — 18 October 2026
+
+Replaced the original stylesheet with the approved aubergine/ivory visual direction: split photography hero, stacked sans wordmark, Inter headings with Newsreader accents, aligned project images, ruled services and a compact contact band. Applied the shared identity to all templates, preserving article URLs and the inquiry backend. Uses original archive photography.
+
+Validation: 55 application checks and 73 localhost HTTP checks passed. Five main pages checked at 1440, 768, 390 and 320px: no horizontal overflow or broken loaded images. Mobile navigation opens and closes with Escape. Desktop homepage/contact and mobile homepage visually reviewed. Production SMTP and cPanel deployment remain separate launch steps.

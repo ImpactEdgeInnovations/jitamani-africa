@@ -7,7 +7,7 @@ $og = $site->file('dining.png');
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e8">
+  <meta name="theme-color" content="#f7f3ea">
   <title><?= esc($title) ?></title>
   <meta name="description" content="<?= esc($description, 'attr') ?>">
   <link rel="canonical" href="<?= esc(ja_canonical($page), 'attr') ?>">
@@ -18,14 +18,14 @@ $og = $site->file('dining.png');
   <meta property="og:url" content="<?= esc(ja_canonical($page), 'attr') ?>">
   <?php if ($og): ?><meta property="og:image" content="<?= esc($og->resize(1200)->url(), 'attr') ?>"><?php endif ?>
   <link rel="icon" href="<?= url('assets/icons/favicon.svg') ?>" type="image/svg+xml">
-  <link rel="preload" href="<?= url('assets/fonts/newsreader-400.ttf') ?>" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=2">
+  <link rel="preload" href="<?= url('assets/fonts/inter-600.ttf') ?>" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=3">
   <script src="<?= url('assets/js/site.js') ?>?v=1" defer></script>
 </head>
 <body class="page-<?= esc($page->intendedTemplate()->name(), 'attr') ?>">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
-  <a class="wordmark" href="<?= $site->url() ?>" aria-label="Jitamani Africa home">Jitamani Africa<span class="brand-dot" aria-hidden="true">.</span></a>
+  <a class="wordmark" href="<?= $site->url() ?>" aria-label="Jitamani Africa home"><span>Jitamani</span><span>Africa</span></a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden><span data-menu-label>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
   <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
     <?php foreach (['home' => 'Home', 'about' => 'About', 'services' => 'Services', 'work' => 'Our Work', 'contact' => 'Contact'] as $id => $label): $item = page($id); ?>

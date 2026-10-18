@@ -1,7 +1,7 @@
 </main>
 <footer class="site-footer wrap">
   <div class="footer-top">
-    <a class="wordmark" href="<?= $site->url() ?>">Jitamani Africa<span class="brand-dot" aria-hidden="true">.</span></a>
+    <a class="wordmark" href="<?= $site->url() ?>"><span>Jitamani</span><span>Africa</span></a>
     <p>Thoughtful ideas.<br>Meaningful experiences.</p>
     <div class="footer-links"><a href="<?= page('contact')->url() ?>">Start a conversation <?= ja_icon('diagonal') ?></a><a href="<?= ja_whatsapp() ?>" rel="noopener noreferrer" target="_blank">WhatsApp <?= ja_icon('whatsapp') ?></a></div>
   </div>
