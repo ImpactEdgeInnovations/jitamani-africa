@@ -10,10 +10,10 @@ fields:
     label: First headline line
     type: text
   headlinesecond:
-    label: Second line after italic word
+    label: Second line ending
     type: text
   headlineaccent:
-    label: Italic word starting second line
+    label: Second line opening word
     type: text
   intro:
     type: textarea

@@ -8,7 +8,7 @@ The build uses original image files from the existing public Jitamani website, n
 | `cocktail.jpeg` | `https://jitamaniafrica.com/images/featured_images/1725953238_WhatsApp%20Image%202024-09-08%20at%2010.38.03.jpeg` | Cocktail project and original article |
 | `mixologist.jpeg` | `https://jitamaniafrica.com/images/featured_images/1725953238_kuku.jpeg` | Homepage hero and detail within the cocktail project; not another project |
 
-Inter and Newsreader were obtained through Google Fonts. Their SIL Open Font License files are in `assets/fonts/`. Fonts are self-hosted; there are no external font requests. The current design loads Inter 400/600 and Newsreader 400. Newsreader provides the italic accent; Inter provides the primary headings and body text.
+Inter and Newsreader were obtained through Google Fonts. Their SIL Open Font License files are in `assets/fonts/`. Fonts are self-hosted; there are no external font requests. The current design uses only Inter 400/600 for consistent upright headings and body text. Newsreader files remain in the repository but are not loaded.
 
 The wordmark follows the typographic concept. The simple JA favicon is a typographic navigation asset, not a recreation of the original JA logo. The original monogram/vector artwork should be supplied and reviewed if it is to be integrated.
 
