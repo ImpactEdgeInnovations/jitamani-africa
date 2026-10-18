@@ -1,0 +1,45 @@
+title: Home
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  eyebrow:
+    type: text
+  headline:
+    label: First headline line
+    type: text
+  headlinesecond:
+    label: Second headline line
+    type: text
+  headlineaccent:
+    label: Accent word
+    type: text
+  intro:
+    type: textarea
+    buttons: false
+  heroimage:
+    label: Hero photograph
+    type: files
+    query: site.images
+    multiple: false
+  herocaption:
+    label: Photograph caption
+    type: text
+  workheading:
+    type: text
+  servicesheading:
+    type: textarea
+    buttons: false
+  servicesintro:
+    type: textarea
+    buttons: false
+  metatitle:
+    label: Search title
+    type: text
+  description:
+    label: Search description
+    type: textarea
+    buttons: false
+    maxlength: 170
+    help: A short, accurate summary for search results.

@@ -1,0 +1,43 @@
+Title: The Chef and The Cook
+
+----
+
+Description: A closer look at The Chef and The Cook, a culinary experience in Loresho, Nairobi.
+
+----
+
+Category: Culinary experience
+
+----
+
+Location: Loresho, Nairobi
+
+----
+
+Intro: An intimate gathering around food, conversation and culinary curiosity.
+
+----
+
+Text: The Chef and The Cook brought guests together in Loresho for an exploration of modern Basque cuisine and locally sourced ingredients.
+
+A shared table, a carefully considered menu and the pleasure of discovery shaped the experience. Explore the original story for the event as it was documented in our archive.
+
+----
+
+Cover: dining.png
+
+----
+
+Gallery: dining.png
+
+----
+
+Archive: blogs/exploring-the-new-basque-cuisine-through-molecular-gastronomy-at-the-chef-and-the-cook
+
+----
+
+Caption: Guests gathered at The Chef and The Cook in Loresho.
+
+----
+
+Orderlabel: 01

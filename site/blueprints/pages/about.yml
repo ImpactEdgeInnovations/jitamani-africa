@@ -1,0 +1,38 @@
+title: About
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  headline:
+    type: text
+  headlineaccent:
+    type: text
+  intro:
+    type: textarea
+    buttons: false
+  featureimage:
+    label: Feature photograph
+    type: files
+    query: site.images
+    multiple: false
+  text:
+    label: Company introduction
+    type: textarea
+    buttons: false
+  thinkingheading:
+    type: text
+  thinkingtext:
+    type: textarea
+    buttons: false
+  workingheading:
+    type: text
+  workingtext:
+    type: textarea
+    buttons: false
+  description:
+    label: Search description
+    type: textarea
+    buttons: false
+    maxlength: 170
+    help: A short, accurate summary for search results.

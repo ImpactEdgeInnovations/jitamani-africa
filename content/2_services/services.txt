@@ -1,0 +1,72 @@
+Title: Services
+
+----
+
+Description: Business development, event curation and execution, marketing consultancy and sales management from Jitamani Africa.
+
+----
+
+Headline: Clear thinking.
+
+----
+
+Headlineaccent: Thoughtful delivery.
+
+----
+
+Intro: Four connected capabilities. One considered approach to your business.
+
+----
+
+Services:
+
+-
+  slug: business-development
+  title: Business Development
+  summary: Strategy, operations and market insight.
+  audience: >
+    For businesses looking for clearer
+    direction and new opportunities.
+  activities: |
+    Strategic planning
+    Operational efficiency
+    Market research and analysis
+-
+  slug: events
+  title: 'Event Curation & Execution'
+  summary: From concept to the experience.
+  audience: >
+    For brands and organisations planning an
+    experience with purpose.
+  activities: |
+    Event planning
+    Creative concepts
+    Execution and management
+-
+  slug: marketing
+  title: Marketing Consultancy
+  summary: Brand direction and campaigns.
+  audience: >
+    For businesses looking to express their
+    value and connect with their audience.
+  activities: |
+    Brand development
+    Digital marketing
+    Campaign management
+-
+  slug: sales
+  title: Sales Management
+  summary: >
+    Sales strategy, training and
+    performance.
+  audience: >
+    For businesses looking to strengthen
+    their sales approach.
+  activities: |
+    Sales strategy
+    Sales training
+    Performance monitoring
+
+----
+
+Uuid: lb1dpinqnzub4gi8

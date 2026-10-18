@@ -1,0 +1,56 @@
+title: Jitamani Africa
+unlisted: true
+tabs:
+  content:
+    label: Website content
+    sections:
+      mainpages:
+        type: pages
+        headline: Main pages
+        query: site.children.listed.add(site.find('home'))
+        create: false
+        image: false
+      archive:
+        type: pages
+        headline: Archive and supporting pages
+        query: site.children.unlisted.not('home', 'error')
+        create: false
+        image: false
+  details:
+    label: Contact details
+    fields:
+      email:
+        label: Inquiry email
+        type: email
+        required: true
+      phone:
+        label: Telephone
+        type: tel
+        required: true
+      whatsapp:
+        label: WhatsApp number
+        type: text
+        help: Country code and digits only, for example 254713830965.
+        required: true
+      linkedin:
+        label: LinkedIn URL
+        type: url
+      instagram:
+        label: Instagram URL
+        type: url
+      contactheading:
+        label: Closing invitation
+        type: text
+      contactintro:
+        label: Closing invitation introduction
+        type: text
+      copyright:
+        type: text
+  photography:
+    label: Shared photographs
+    sections:
+      photos:
+        type: files
+        template: image
+        layout: cards
+        size: medium

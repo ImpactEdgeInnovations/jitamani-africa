@@ -1,0 +1,56 @@
+Title: Home
+
+----
+
+Metatitle: Jitamani Africa — Business Development & Events in Kenya
+
+----
+
+Description: Business development, event curation, marketing and sales. Explore the work of Jitamani Africa, a women-led consultancy based in Kenya.
+
+----
+
+Eyebrow: Kenya / Business development & events
+
+----
+
+Headline: Ideas with intent.
+
+----
+
+Headlinesecond: Experiences with
+
+----
+
+Headlineaccent: impact.
+
+----
+
+Intro: A women-led consultancy based in Kenya, bringing together business development, events, marketing and sales.
+
+----
+
+Herocaption: The Chef and The Cook / An experience from our archive
+
+----
+
+Workheading: A closer look at what we do.
+
+----
+
+Servicesheading:
+
+Considered thinking.
+Thoughtful delivery.
+
+----
+
+Servicesintro: From the direction of a business to the details of an experience, we bring ideas into focus.
+
+----
+
+Heroimage: dining.png
+
+----
+
+Uuid: ununjuv9vzwxblyg

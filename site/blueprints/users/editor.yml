@@ -1,0 +1,26 @@
+title: Content editor
+permissions:
+  access:
+    account: true
+    panel: true
+    site: true
+    languages: false
+    system: false
+    users: false
+  site:
+    update: true
+    changeTitle: false
+  files:
+    changeName: false
+    changeTemplate: false
+  languages:
+    create: false
+    delete: false
+    update: false
+  users:
+    create: false
+    delete: false
+    update: false
+    changeRole: false
+  user:
+    changeRole: false

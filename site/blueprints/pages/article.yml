@@ -1,0 +1,30 @@
+title: Archive article
+status:
+  draft: Draft
+  unlisted: Published
+fields:
+  title:
+    type: text
+  date:
+    type: date
+  intro:
+    type: textarea
+    buttons: false
+  cover:
+    type: files
+    multiple: false
+    query: page.images
+    uploads:
+      template: image
+  text:
+    type: textarea
+    size: large
+    buttons:
+      - headlines
+      - bold
+      - link
+      - ul
+  description:
+    label: Search description
+    type: textarea
+    buttons: false

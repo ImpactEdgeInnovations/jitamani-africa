@@ -1,0 +1,47 @@
+title: Project
+num: default
+status:
+  draft: Draft
+  listed: Published
+fields:
+  title:
+    type: text
+    required: true
+  category:
+    label: Type of experience
+    type: text
+  location:
+    type: text
+  intro:
+    label: Short introduction
+    type: textarea
+    buttons: false
+  text:
+    label: The story
+    type: textarea
+    buttons:
+      - headlines
+      - bold
+      - link
+      - ul
+  cover:
+    type: files
+    multiple: false
+    query: page.images
+    uploads:
+      template: image
+  caption:
+    type: text
+  gallery:
+    type: files
+    query: page.images
+    uploads:
+      template: image
+  archive:
+    label: Related archive path (optional)
+    type: text
+    help: For example blogs/existing-article-slug. Only reference verified content.
+  description:
+    label: Search description
+    type: textarea
+    buttons: false

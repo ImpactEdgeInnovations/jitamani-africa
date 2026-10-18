@@ -1,0 +1,15 @@
+title: Photograph
+accept:
+  type: image
+  mime: image/jpeg, image/png, image/webp, image/avif
+  maxsize: 10000000
+fields:
+  alt:
+    label: Image description
+    type: textarea
+    buttons: false
+    required: true
+    help: Briefly describe what the image shows for someone who cannot see it.
+  credit:
+    label: Photographer / source / permission record
+    type: text

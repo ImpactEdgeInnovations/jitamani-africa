@@ -1,0 +1,33 @@
+Title: Privacy
+
+----
+
+Description: How Jitamani Africa uses information submitted through this website.
+
+----
+
+Headline: Your privacy
+
+----
+
+Text:
+
+## Contacting us
+
+When you submit an inquiry, we use your name, email address, message and optional phone number to respond to your request. You do not need to subscribe to marketing to contact us.
+
+## Keeping information safe
+
+Inquiries are intended for the team handling your request. A restricted recovery copy helps protect against email-delivery failures. We do not publish your message or include it in website analytics. The website uses essential security cookies for the contact form and private content editor.
+
+## Other services
+
+Choosing WhatsApp, email or a social link opens another service with its own privacy terms. Fonts and website photographs are served by this website.
+
+## Questions
+
+For a privacy question or request concerning your inquiry, contact (email: seina@jitamaniafrica.com).
+
+----
+
+Uuid: fvz8cmrqohhufjxi

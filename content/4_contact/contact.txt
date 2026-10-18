@@ -1,0 +1,25 @@
+Title: Contact
+
+----
+
+Description: Tell Jitamani Africa about your project. Contact us by inquiry form, email, phone or WhatsApp.
+
+----
+
+Headline: What are you
+
+----
+
+Headlineaccent: planning?
+
+----
+
+Intro: Tell us a little about your project, or simply say hello.
+
+----
+
+Formintro: A few details to get the conversation started.
+
+----
+
+Uuid: bipku3ntq8kn4z9n

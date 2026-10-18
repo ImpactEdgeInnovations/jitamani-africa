@@ -1,0 +1,21 @@
+title: Default
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  headline:
+    type: text
+  text:
+    type: textarea
+    buttons:
+      - headlines
+      - bold
+      - link
+      - ul
+  description:
+    label: Search description
+    type: textarea
+    buttons: false
+    maxlength: 170
+    help: A short, accurate summary for search results.

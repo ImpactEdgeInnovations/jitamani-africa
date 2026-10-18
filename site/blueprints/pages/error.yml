@@ -1,0 +1,13 @@
+title: Not found
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  headline:
+    type: text
+  headlineaccent:
+    type: text
+  intro:
+    type: textarea
+    buttons: false

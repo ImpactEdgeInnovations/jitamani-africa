@@ -1,0 +1,22 @@
+<?php
+// Copy to config.local.php, which is explicitly loaded on web and CLI requests,
+// or set the environment values documented in README. Use canonical=null on staging.
+// Never commit the configured file. Use a private directory OUTSIDE public_html.
+return [
+    'debug' => false,
+    'ja' => [
+        'canonical' => 'https://jitamaniafrica.com',
+        'inquiries' => '/home/CPANEL_USER/jitamani-private/inquiries',
+        'mail' => [
+            'mode' => 'smtp',
+            'from' => 'website@jitamaniafrica.com',
+            'to' => 'seina@jitamaniafrica.com',
+            'host' => 'YOUR_AUTHORISED_SMTP_HOST',
+            'port' => 587,
+            'security' => 'tls',
+            'username' => '',
+            'password' => '',
+        ],
+    ],
+    'panel' => ['install' => false],
+];

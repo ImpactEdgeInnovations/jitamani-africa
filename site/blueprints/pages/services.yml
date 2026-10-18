@@ -1,0 +1,39 @@
+title: Services
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  headline:
+    type: text
+  headlineaccent:
+    type: text
+  intro:
+    type: textarea
+    buttons: false
+  services:
+    label: Our capabilities
+    type: structure
+    fields:
+      slug:
+        label: Link identifier
+        type: slug
+        required: true
+      title:
+        type: text
+        required: true
+      summary:
+        type: text
+      audience:
+        type: textarea
+        buttons: false
+      activities:
+        type: textarea
+        buttons: false
+        help: One activity per line.
+  description:
+    label: Search description
+    type: textarea
+    buttons: false
+    maxlength: 170
+    help: A short, accurate summary for search results.

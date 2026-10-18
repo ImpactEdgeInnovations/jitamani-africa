@@ -1,0 +1,21 @@
+title: Contact
+options:
+  changeSlug: false
+  changeStatus: false
+  delete: false
+fields:
+  headline:
+    type: text
+  headlineaccent:
+    type: text
+  intro:
+    type: textarea
+    buttons: false
+  formintro:
+    type: text
+  description:
+    label: Search description
+    type: textarea
+    buttons: false
+    maxlength: 170
+    help: A short, accurate summary for search results.

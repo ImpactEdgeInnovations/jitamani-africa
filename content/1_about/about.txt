@@ -1,0 +1,45 @@
+Title: About
+
+----
+
+Description: Meet Jitamani Africa, a women-led business development and events consultancy based in Kenya.
+
+----
+
+Headline: A creative partner,
+
+----
+
+Headlineaccent: grounded in purpose.
+
+----
+
+Intro: A women-led business development and events consultancy based in Kenya.
+
+----
+
+Text: Jitamani Africa brings together strategic thinking and creative execution. We work across business development, events, marketing and sales, with an interest in the people and ideas shaping Africa’s creative and entrepreneurial landscape.
+
+----
+
+Thinkingheading: How we think
+
+----
+
+Thinkingtext: We approach each brief with curiosity and care, connecting the bigger picture with the details that make it work.
+
+----
+
+Workingheading: How we work
+
+----
+
+Workingtext: We begin with a conversation: what you are working towards, what matters to your audience and where our support can make a difference.
+
+----
+
+Featureimage: dining.png
+
+----
+
+Uuid: mqhvj03yro6bqfjk

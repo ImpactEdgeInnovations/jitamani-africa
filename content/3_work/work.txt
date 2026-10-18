@@ -1,0 +1,25 @@
+Title: Our Work
+
+----
+
+Description: Explore event experiences and selected stories from the Jitamani Africa archive.
+
+----
+
+Headline: Ideas,
+
+----
+
+Headlineaccent: brought to life.
+
+----
+
+Intro: A selection of experiences, collaborations and moments from our work.
+
+----
+
+Note: Every project starts with a conversation.
+
+----
+
+Uuid: 1cepzc3fnnikkjij
