@@ -20,9 +20,18 @@ fields:
     buttons: false
   heroimage:
     label: Hero photograph
+    help: Use an original portrait photograph, ideally at least 1600px tall. Keep the subject in the lower centre for the responsive crop.
     type: files
     query: site.images
     multiple: false
+  introductionheading:
+    label: Company introduction heading
+    type: text
+  introductiontext:
+    label: Company introduction
+    type: textarea
+    buttons: false
+    help: A brief, specific explanation of who you are and what you bring.
   workheading:
     type: text
   metatitle:

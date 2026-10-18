@@ -1124,3 +1124,30 @@ figcaption {
     transition:none!important
   }
 }
+
+/* Content and mobile contact refinements. */
+.home-hero-photo img { object-position:50% 72%; }
+.home-introduction { display:grid; grid-template-columns:1fr 2fr; gap:48px; padding-block:56px; border-bottom:1px solid var(--line); }
+.home-introduction .eyebrow { padding-top:8px; }
+.home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:620px; }
+.home-introduction p:not(.eyebrow) { max-width:660px; margin-block:20px; color:var(--muted); }
+.page-home .project-caption > span { display:block; margin-top:6px; color:var(--wine); }
+.project-summary { font-size:14px; color:var(--muted); max-width:520px; margin-top:10px; }
+.project-story-link { margin-top:16px; font-size:13px; }
+.case-study { padding-bottom:48px; }
+.case-study-row { display:grid; grid-template-columns:1fr 2fr; gap:8%; border-top:1px solid var(--line); padding-block:28px; }
+.case-study-row h2 { font-size:26px; letter-spacing:-.035em; }
+.page-intro h1 { font-size:clamp(44px,5vw,72px); }
+.mobile-whatsapp { display:none; }
+@media(max-width:760px) {
+  body { padding-bottom:calc(66px + env(safe-area-inset-bottom)); }
+  .home-introduction { grid-template-columns:1fr; gap:18px; padding-block:36px; }
+  .home-introduction h2 { font-size:30px; }
+  .home-introduction p:not(.eyebrow) { font-size:15px; margin-block:16px; }
+  .home-hero-photo img { object-position:50% 75%; }
+  .case-study-row { grid-template-columns:1fr; gap:16px; padding-block:24px; }
+  .case-study-row h2 { font-size:24px; }
+  .mobile-whatsapp { position:fixed; bottom:0; left:0; right:0; z-index:8; display:flex; align-items:center; justify-content:center; gap:12px; min-height:58px; padding:16px 20px calc(16px + env(safe-area-inset-bottom)); background:var(--ink); color:var(--paper); border-top:1px solid #78616f; font-size:13px; }
+  .mobile-whatsapp:focus-visible { outline-color:var(--paper); outline-offset:-5px; }
+  body:has(.inquiry-form :focus) .mobile-whatsapp, body:has(.menu-toggle[aria-expanded=true]) .mobile-whatsapp { display:none; }
+}

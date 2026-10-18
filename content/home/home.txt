@@ -54,3 +54,11 @@ Heroimage: mixologist.jpeg
 ----
 
 Uuid: ununjuv9vzwxblyg
+
+----
+
+Introductionheading: A creative partner, rooted in Kenya.
+
+----
+
+Introductiontext: We are a women-led business development and events consultancy. We bring considered thinking to business, marketing and sales, and care to the details of the experiences we create.

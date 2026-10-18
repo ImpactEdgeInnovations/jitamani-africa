@@ -32,3 +32,10 @@ The layout/keyboard checks are not full WCAG certification. No physical-device/b
 Replaced the original stylesheet with the approved aubergine/ivory visual direction: split photography hero, stacked sans wordmark, Inter headings with Newsreader accents, aligned project images, ruled services and a compact contact band. Applied the shared identity to all templates, preserving article URLs and the inquiry backend. Uses original archive photography.
 
 Validation: 55 application checks and 73 localhost HTTP checks passed. Five main pages checked at 1440, 768, 390 and 320px: no horizontal overflow or broken loaded images. Mobile navigation opens and closes with Escape. Desktop homepage/contact and mobile homepage visually reviewed. Production SMTP and cPanel deployment remain separate launch steps.
+
+
+## UI and content refinements
+
+Added company introduction, project summaries and optional case-study sections based on the existing archive. Improved hero crop and internal heading scale. Added mobile WhatsApp shortcut with safe-area spacing, hidden during form entry and menu use. Editor fields now include image guidance and optional verified outcomes.
+
+Validation: 55 application checks passed. Homepage, work index, both project stories and contact page checked at 1440/390/320px without horizontal overflow. Browser checks confirmed WhatsApp hides during input focus and menu use. No private SMTP configuration or complete SMTP environment is available; live delivery remains unverified. Original high-resolution photos and original brand artwork have not been supplied.

@@ -10,6 +10,10 @@
     <figure class="home-hero-photo"><?php ja_image($page->heroimage()->toFile() ?? $site->file('mixologist.jpeg'), '(min-width: 1440px) 720px, (min-width: 761px) 50vw, 100vw', true); ?></figure>
   </div>
 </section>
+<section class="home-introduction wrap" aria-labelledby="introduction-title">
+  <p class="eyebrow">Meet Jitamani</p>
+  <div><h2 id="introduction-title"><?= $page->introductionheading()->esc() ?></h2><p><?= $page->introductiontext()->esc() ?></p><a class="text-link" href="<?= page('about')->url() ?>">More about us <?= ja_icon('diagonal') ?></a></div>
+</section>
 <section class="selected-work wrap" aria-labelledby="selected-work-title">
   <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="selected-work-title"><?= $page->workheading()->esc() ?></h2></div><a class="text-link" href="<?= page('work')->url() ?>">View all work <?= ja_icon('diagonal') ?></a></div>
   <div class="project-grid"><?php foreach (page('work')->children()->listed()->limit(2) as $project) snippet('project-preview', compact('project')) ?></div>

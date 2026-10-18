@@ -13,5 +13,6 @@
     <span class="footer-location">Based in Kenya. Open to possibilities.</span>
   </div>
 </footer>
+<a class="mobile-whatsapp" href="<?= ja_whatsapp() ?>" target="_blank" rel="noopener noreferrer" aria-label="Chat with Jitamani Africa on WhatsApp (opens in a new tab)"><?= ja_icon('whatsapp') ?> <span>Let’s talk on WhatsApp</span> <?= ja_icon('diagonal') ?></a>
 </body>
 </html>

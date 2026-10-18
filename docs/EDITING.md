@@ -31,3 +31,12 @@ The **Contact details** tab controls displayed email, phone, WhatsApp, social li
 Inquiries arrive in the business inbox after production SMTP is configured. There is no CRM to maintain. A maintainer can recover/retry a pending private record if mail delivery fails. Local tests explicitly say that no email was sent.
 
 Before publishing, check spelling, mobile presentation, photo crops, link destinations and image descriptions. Avoid deleting a shared photograph still used by another page.
+
+
+## Homepage and case-study refinements
+
+Home includes a short company introduction with editable heading and text. Upload original photographs when available: portrait images of at least 1600px tall work best for the hero; landscape images of at least 1600px wide work best for project covers. The current hero uses a lower crop to prioritise the mixologist and his work.
+
+Projects include optional idea, role, delivery and outcome fields. Empty sections are omitted from the public page. Only publish responsibilities and outcomes you can substantiate; no outcome figures are required. The existing Chef and The Cook article does not specify Jitamani’s exact responsibilities, so its role section remains blank.
+
+The mobile WhatsApp link uses the contact number already stored in site settings. It hides while the contact form has focus or the navigation menu is open.

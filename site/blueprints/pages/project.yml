@@ -24,7 +24,26 @@ fields:
       - bold
       - link
       - ul
+  brief:
+    label: The idea (optional)
+    type: textarea
+    buttons: false
+  role:
+    label: Jitamani’s role (optional)
+    type: textarea
+    buttons: false
+    help: Describe only your verified responsibilities. Leave blank if not confirmed.
+  delivery:
+    label: Experience details (optional)
+    type: textarea
+    buttons: false
+  outcome:
+    label: Verified outcome (optional)
+    type: textarea
+    buttons: false
+    help: Use only confirmed results. Leave blank rather than adding estimates or unsupported claims.
   cover:
+    help: Choose a landscape original, ideally 1600px wide or larger. Keep important subjects away from the edges.
     type: files
     multiple: false
     query: page.images

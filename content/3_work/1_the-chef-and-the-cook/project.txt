@@ -41,3 +41,14 @@ Caption: Guests gathered at The Chef and The Cook in Loresho.
 ----
 
 Orderlabel: 01
+
+
+----
+
+Brief: An exploration of modern Basque cuisine, molecular gastronomy and locally sourced ingredients, shared around a table in Loresho.
+
+----
+
+Delivery: The programme ran from March 22 to 24, with a press briefing on March 18. Chef James Mitchell led the culinary experience; the original account credits Build X as a co-founder and Yaniv Gelnik as “The Cook.”
+
+The menu paired experimental techniques with local ingredients, from white snapper and cured egg yolk to a dessert of baobab, pineapple, mint and peanut.
