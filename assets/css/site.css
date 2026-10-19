@@ -1166,6 +1166,8 @@ figcaption {
 .home-hero-photo img { object-position:50% 72%; }
 .home-introduction { display:grid; grid-template-columns:1fr 2fr; gap:48px; padding-block:56px; border-bottom:1px solid var(--line); }
 .home-introduction .eyebrow { padding-top:8px; }
+.introduction-brand { display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+.introduction-monogram { width:min(100%,240px); height:auto; filter:url(#ja-intro-colors); }
 .home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:620px; }
 .home-introduction p:not(.eyebrow) { max-width:660px; margin-block:20px; color:var(--muted); }
 .page-home .project-caption > span { display:block; margin-top:6px; color:var(--wine); }
@@ -1179,6 +1181,9 @@ figcaption {
 @media(max-width:760px) {
   body { padding-bottom:calc(66px + env(safe-area-inset-bottom)); }
   .home-introduction { grid-template-columns:1fr; gap:18px; padding-block:36px; }
+  .introduction-brand { flex-direction:row; align-items:center; justify-content:space-between; gap:20px; }
+  .introduction-brand .eyebrow { padding-top:0; }
+  .introduction-monogram { width:84px; flex-shrink:0; }
   .home-introduction h2 { font-size:30px; }
   .home-introduction p:not(.eyebrow) { font-size:15px; margin-block:16px; }
   .home-hero-photo img { object-position:50% 75%; }

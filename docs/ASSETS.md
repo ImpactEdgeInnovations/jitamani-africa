@@ -14,4 +14,6 @@ The header wordmark follows the typographic concept. The simple JA favicon is a 
 
 The owner supplied `2.webm` and `loop.webm` on 19 October 2026 and approved the recolored `2.webm` concept. `assets/motion/ja-reveal.webm` preserves that original supplied video (78,437 bytes). The homepage closing invitation maps its black/white tones to aubergine/ivory using an SVG color filter. `ja-still.png` is a captured complete-monogram frame from the same clip, used without JavaScript, for reduced motion, after the one-time reveal and if video playback fails. Video data loads only when the mark enters view and motion is permitted. The static header and existing photography remain unchanged.
 
+The homepage introduction reuses `ja-still.png` as a static terracotta-on-ivory monogram beneath “Meet Jitamani.” On phones it sits alongside the label at a smaller size. This treatment uses its own color filter and adds no second video or animation.
+
 The two archive articles preserve their original narrative and 2024 publication dates/URLs. Only draft citation debris, duplicate sidebar material and broken self-title links were removed. Statements in historical articles remain historical company copy; the new portfolio summaries do not introduce new quantitative claims.
