@@ -1,23 +1,24 @@
 <?php
 $home = page('home');
-$featured = $featured ?? false;
-$brands = $home->brands()->toStructure();
-if ($featured) $brands = $brands->filter(fn ($brand) => $brand->featured()->toBool())->limit(6);
+$brands = $home->brands()->toStructure()->filter(fn ($brand) => $brand->visible()->isEmpty() || $brand->visible()->toBool());
 if ($brands->isEmpty()) return;
 ?>
-<section class="brand-section wrap<?= $featured ? ' brand-section--featured' : '' ?>" id="brands" aria-labelledby="brands-title">
-  <div class="brand-section-heading">
-    <h2 id="brands-title"><?= $featured ? $home->brandsheading()->esc() : 'Brands and collaborators' ?></h2>
-    <?php if ($featured): ?><a class="text-link" href="<?= page('about')->url() ?>#brands">More brands and collaborators <?= ja_icon('diagonal') ?></a><?php endif ?>
+<section class="brand-strip wrap" id="brands" aria-labelledby="brands-title" data-brand-strip style="--brand-duration:<?= max(30, $brands->count() * 6) ?>s">
+  <div class="brand-strip-heading">
+    <h2 id="brands-title"><?= $home->brandsheading()->esc() ?></h2>
+    <button class="brand-motion-toggle" type="button" aria-pressed="false" hidden>Pause logos</button>
   </div>
-  <ul class="brand-grid" role="list">
-    <?php foreach ($brands as $brand): $logo = $brand->logo()->toFile(); ?>
-    <li><figure>
-      <div class="brand-logo<?= $logo && $brand->dark()->toBool() ? ' brand-logo--dark' : '' ?>">
-        <?php if ($logo): ?><img src="<?= $logo->url() ?>" alt="<?= $brand->name()->esc() ?>" width="<?= $logo->width() ?>" height="<?= $logo->height() ?>" loading="lazy" decoding="async"><?php else: ?><span class="brand-name"><?= $brand->name()->esc() ?></span><?php endif ?>
-      </div>
-      <?php if (!$featured && $logo): ?><figcaption><?= $brand->name()->esc() ?></figcaption><?php endif ?>
-    </figure></li>
-    <?php endforeach ?>
-  </ul>
+  <div class="brand-viewport" tabindex="0" role="region" aria-label="Brands and collaborators; scroll horizontally to explore">
+    <div class="brand-track">
+      <?php foreach ([false, true] as $duplicate): ?>
+      <ul class="brand-list" role="list"<?= $duplicate ? ' aria-hidden="true" hidden' : '' ?>>
+        <?php foreach ($brands as $brand): $logo = $brand->logo()->toFile(); ?>
+        <li class="brand-logo<?= $logo && $brand->dark()->toBool() ? ' brand-logo--white-art' : '' ?>">
+          <?php if ($logo): ?><img src="<?= $logo->url() ?>" alt="<?= $brand->name()->esc() ?>" width="<?= $logo->width() ?>" height="<?= $logo->height() ?>" loading="lazy" decoding="async"><?php else: ?><span class="brand-name"><?= $brand->name()->esc() ?></span><?php endif ?>
+        </li>
+        <?php endforeach ?>
+      </ul>
+      <?php endforeach ?>
+    </div>
+  </div>
 </section>

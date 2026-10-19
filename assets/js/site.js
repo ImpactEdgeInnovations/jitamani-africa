@@ -27,6 +27,33 @@
   }
   document.querySelector('[data-form-errors]')?.focus();
 
+  const strip = document.querySelector('[data-brand-strip]');
+  if (strip) {
+    const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+    const button = strip.querySelector('.brand-motion-toggle');
+    const duplicate = strip.querySelector('[aria-hidden="true"]');
+    const viewport = strip.querySelector('.brand-viewport');
+    const configure = () => {
+      const animate = !motionPreference.matches;
+      strip.classList.toggle('is-enhanced', animate);
+      duplicate.hidden = !animate;
+      button.hidden = !animate;
+      viewport.setAttribute('aria-label', animate ? 'Brands and collaborators; animation pauses while focused' : 'Brands and collaborators; scroll horizontally to explore');
+    };
+    button.addEventListener('click', () => {
+      const paused = strip.classList.toggle('is-paused');
+      button.setAttribute('aria-pressed', String(paused));
+      button.textContent = paused ? 'Resume logos' : 'Pause logos';
+    });
+    motionPreference.addEventListener('change', configure);
+    configure();
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(entries => {
+        strip.classList.toggle('is-offscreen', !entries[0].isIntersecting);
+      }).observe(strip);
+    }
+  }
+
   const mark = document.querySelector('[data-brand-reveal]');
   const video = mark?.querySelector('video');
   if (video && 'IntersectionObserver' in window) {

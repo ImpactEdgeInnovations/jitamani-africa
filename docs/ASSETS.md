@@ -21,9 +21,9 @@ The two archive articles preserve their original narrative and 2024 publication 
 
 ## Brands and collaborators
 
-All 20 names were already represented in the original Jitamani homepage’s brand collection. Their presence is retained as company-published work history; no new client, testimonial, endorsement, or project outcome has been added. Home displays six selected logos; About carries the full collection. Administrators manage names, artwork, order, featured selection, and dark backgrounds under Home → Brands and collaborators.
+All 20 names were already represented in the original Jitamani homepage’s brand collection. Their presence is retained as company-published work history; no new client, testimonial, endorsement, or project outcome has been added. Home shows the collection in one compact, slow-moving row below the featured work; About has no brand grid. Administrators manage names, artwork, order, visibility, and white-logo treatment under Home → Brands and collaborators.
 
-Images are self-hosted. Transparent outer padding is trimmed and raster files are downscaled and losslessly compressed for display; no logo artwork or brand colors are redrawn. White variants use an aubergine backdrop. Official sources replace unavailable or visibly degraded originals where available. ZTN and Zimbabwe Youth Council remain as readable names because their logo endpoints could not be retrieved reliably.
+Images are self-hosted. Transparent outer padding is trimmed and raster files are downscaled and losslessly compressed for display; no logo artwork is redrawn. The strip applies grayscale to the displayed artwork, with a dark monochrome treatment for white variants; the saved files retain their original colors. No logo cards or colored backdrops are added. Official sources replace unavailable or visibly degraded originals where available. ZTN and Zimbabwe Youth Council remain as readable names because their logo endpoints could not be retrieved reliably.
 
 | Brand | Local file | Source |
 |---|---|---|

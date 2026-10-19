@@ -16,9 +16,9 @@ Project-specific photos live inside that project's editor. Use original high-qua
 
 ## Brands and collaborators
 
-Open **Home → Brands and collaborators** to edit the collection shared by Home and About. Update a brand name, choose or upload its official logo, and drag entries to reorder them. The first six entries marked **Show on homepage** appear in the selected grid; all entries appear on About. The homepage heading is editable separately.
+Open **Home → Brands and collaborators** to edit the slim logo strip below the featured work. Update a brand name, choose or upload its official logo, and drag entries to reorder them. **Include in brand strip** controls visibility. The strip heading is editable separately. About retains its original text and photography layout without a brand wall.
 
-Enable **Logo needs a dark background** for white artwork. Leave the logo empty to show the brand name instead of a broken or unsuitable image. Retain the original artwork and colors, and record its source URL in the uploaded file’s details. Add only relationships the business can substantiate.
+Enable **White logo artwork** for white variants so the strip renders them legibly. Leave the logo empty to show the brand name instead of a broken or unsuitable image. Retain the original artwork and record its source URL in the uploaded file’s details. The strip applies a muted monochrome presentation without modifying the saved source files. Add only relationships the business can substantiate. Motion pauses on hover, keyboard focus and the Pause logos control. With reduced motion or JavaScript disabled, the single row can be scrolled manually.
 
 ## Projects
 
