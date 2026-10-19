@@ -15,11 +15,13 @@ RUN apt-get update \
 COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
 WORKDIR /var/www/html
 COPY . .
+COPY scripts/demo-entrypoint.sh /usr/local/bin/jitamani-demo-start
 RUN COMPOSER_ALLOW_SUPERUSER=1 composer install --no-dev --prefer-dist --no-interaction --optimize-autoloader \
+    && chmod 755 /usr/local/bin/jitamani-demo-start \
     && mkdir -p media site/accounts site/cache site/sessions site/logs \
     && chown -R www-data:www-data media site/accounts site/cache site/sessions site/logs
 
 # This image is for design review. cPanel deployment does not use Docker.
 ENV JA_DEMO=1
 EXPOSE 80
-CMD ["apache2-foreground"]
+CMD ["jitamani-demo-start"]
