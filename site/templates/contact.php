@@ -4,6 +4,8 @@
   <div class="contact-form-column">
     <?php if ($success): ?>
     <div class="form-success" role="status"><span class="eyebrow"><?= $success['local'] ? 'Local preview' : 'Message received' ?></span><h2><?= $success['local'] ? 'Your test is saved.' : 'Thank you for saying hello.' ?></h2><p><?= $success['local'] ? 'The inquiry was saved locally. No email was sent from this preview.' : 'Your inquiry has been saved and passed to our email service. We look forward to continuing the conversation.' ?></p><a class="text-link" href="<?= $page->url() ?>">Send another message <?= ja_icon() ?></a></div>
+    <?php elseif (option('ja.demo')): ?>
+    <div class="form-success"><span class="eyebrow">Website preview</span><h2>A look at what’s coming.</h2><p>This is a demonstration website. The inquiry form is disabled here; messages are not collected or sent.</p><a class="text-link" href="mailto:<?= $site->email()->esc() ?>">Contact us by email <?= ja_icon('diagonal') ?></a></div>
     <?php else: ?>
     <p class="form-intro"><?= $page->formintro()->esc() ?></p>
     <?php if ($errors): ?><div class="form-errors" role="alert" tabindex="-1" data-form-errors><h2>Please check your message.</h2><ul><?php foreach ($errors as $key => $error): ?><li><?php if ($key !== 'form'): ?><a href="#<?= esc($key) ?>"><?= esc($error) ?></a><?php else: ?><?= esc($error) ?><?php endif ?></li><?php endforeach ?></ul></div><?php endif ?>

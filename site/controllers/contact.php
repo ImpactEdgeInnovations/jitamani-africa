@@ -4,6 +4,12 @@ declare(strict_types=1);
 return function ($kirby, $site, $page) {
     $errors = []; $errorStatus = 422; $values = ['name' => '', 'email' => '', 'phone' => '', 'message' => ''];
     $success = $kirby->session()->pull('ja.inquiry.success');
+    if (option('ja.demo')) {
+        // A disposable review deployment must not collect or email inquiries.
+        if ($kirby->request()->is('POST')) $kirby->response()->code(405);
+        $success = null;
+        return compact('errors', 'values', 'success');
+    }
     if ($kirby->request()->is('POST')) {
         $kirby->response()->header('Cache-Control', 'no-store, private', true);
         foreach ($values as $key => $_) $values[$key] = is_string(get($key)) ? trim(get($key)) : '';

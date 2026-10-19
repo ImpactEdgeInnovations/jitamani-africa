@@ -2,15 +2,17 @@
 declare(strict_types=1);
 
 $local = PHP_SAPI === 'cli-server' && in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1'], true);
+$demo = getenv('JA_DEMO') === '1';
 
 $config = [
-    'debug' => $local,
-    'panel' => ['install' => $local],
+    'debug' => $local && !$demo,
+    'panel' => ['install' => $local && !$demo],
     'whoops' => false,
     'thumbs' => ['quality' => 82],
     'markdown' => ['extra' => true],
     'ja' => [
         'local' => $local,
+        'demo' => $demo,
         'canonical' => getenv('JA_CANONICAL_URL') ?: null,
         'inquiries' => dirname(__DIR__, 2) . '/storage/inquiries',
         'mail' => [
