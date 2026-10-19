@@ -26,5 +26,5 @@
   <h2 class="eyebrow" id="home-services-title">How we can help</h2>
   <div class="service-index"><?php foreach (ja_services() as $i => $service): ?><a href="<?= page('services')->url() ?>#<?= $service->slug()->esc() ?>"><span class="service-number">0<?= $i + 1 ?></span><span><?= $service->title()->esc() ?></span><?= ja_icon() ?></a><?php endforeach ?></div>
 </section>
-<?php snippet('invitation') ?>
+<?php snippet('invitation', ['animated' => true]) ?>
 <?php snippet('footer') ?>

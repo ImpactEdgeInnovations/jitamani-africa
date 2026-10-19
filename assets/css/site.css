@@ -360,6 +360,50 @@ the photograph fills its half of the band. */
 .invitation h2 {
   font-size:clamp(32px,3.5vw,50px)
 }
+.invitation-copy { display:contents; }
+.invitation--animated { padding:48px 0; }
+.invitation--animated .invitation-inner {
+  display:grid;
+  grid-template-columns:minmax(0,1.5fr) minmax(220px,1fr);
+  gap:clamp(32px,6vw,90px);
+  align-items:center;
+}
+.invitation--animated .invitation-copy { display:block; }
+.invitation--animated h2 {
+  max-width:620px;
+  font-size:clamp(38px,4.4vw,64px);
+}
+.invitation-copy>p {
+  max-width:440px;
+  margin-top:24px;
+  color:#ded4d4;
+}
+.invitation--animated .invitation-bottom { margin-top:28px; flex-wrap:wrap; }
+.invitation-mark { width:100%; max-width:360px; justify-self:end; }
+.brand-color-filter { position:absolute; width:0; height:0; overflow:hidden; }
+.invitation-mark-visual {
+  position:relative;
+  aspect-ratio:1;
+  background:#000;
+  filter:url(#ja-mark-colors);
+}
+.invitation-mark-visual img,.invitation-mark-visual video {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.invitation-mark-visual video { position:absolute; inset:0; opacity:0; pointer-events:none; }
+.invitation-mark.is-playing video { opacity:1; }
+@media(max-width:760px) {
+  .invitation--animated .invitation-inner { grid-template-columns:1fr; gap:24px; }
+  .invitation--animated h2 { font-size:38px; }
+  .invitation-mark { max-width:230px; justify-self:center; }
+  .invitation-copy>p { font-size:15px; margin-top:20px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .invitation-mark-visual video { display:none; }
+}
 .invitation-bottom {
   display:flex;
   align-items:center;

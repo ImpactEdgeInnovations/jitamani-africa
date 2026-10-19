@@ -26,4 +26,42 @@
     matchMedia('(min-width: 761px)').addEventListener('change', () => close());
   }
   document.querySelector('[data-form-errors]')?.focus();
+
+  const mark = document.querySelector('[data-brand-reveal]');
+  const video = mark?.querySelector('video');
+  if (video && 'IntersectionObserver' in window) {
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    let started = false;
+    let finished = false;
+    const finish = () => {
+      finished = true;
+      video.pause();
+      mark.classList.remove('is-playing');
+    };
+    video.addEventListener('playing', () => {
+      if (finished || reducedMotion.matches) finish();
+      else mark.classList.add('is-playing');
+    });
+    // The supplied clip has a complete monogram before its closing frames.
+    // Hold a matching still rather than looping or showing the closing transition.
+    video.addEventListener('timeupdate', () => { if (video.currentTime >= 3.7) finish(); });
+    video.addEventListener('ended', finish);
+    video.addEventListener('error', finish);
+    reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) finish(); });
+    document.addEventListener('visibilitychange', () => { if (document.hidden && started) finish(); });
+    const observer = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.35 && !started && !finished && !reducedMotion.matches) {
+          started = true;
+          video.muted = true;
+          video.src = video.dataset.src;
+          video.play().catch(finish);
+        } else if (!entry.isIntersecting && started) {
+          finish();
+        }
+        if (finished) observer.disconnect();
+      }
+    }, { threshold: [0, 0.35] });
+    observer.observe(mark);
+  }
 })();
