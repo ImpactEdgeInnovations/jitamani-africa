@@ -14,19 +14,19 @@ Eyebrow: Rooted in Kenya. Open to possibility.
 
 ----
 
-Headline: Good ideas.
+Headline: Build your business.
 
 ----
 
-Headlinesecond: impact.
+Headlinesecond: experiences.
 
 ----
 
-Headlineaccent: Lasting
+Headlineaccent: Create memorable
 
 ----
 
-Intro: Business development, events, marketing and sales — brought together with care.
+Intro: Business development, event curation, marketing and sales consultancy in Kenya.
 
 ----
 
@@ -61,4 +61,4 @@ Introductionheading: A creative partner, rooted in Kenya.
 
 ----
 
-Introductiontext: We are a women-led business development and events consultancy. We bring considered thinking to business, marketing and sales, and care to the details of the experiences we create.
+Introductiontext: We are a women-led consultancy based in Kenya, bringing business strategy and creative event delivery together. From a business challenge to a shared experience, we start with the people and purpose behind it.

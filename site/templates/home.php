@@ -18,7 +18,8 @@
   <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="selected-work-title"><?= $page->workheading()->esc() ?></h2></div><a class="text-link" href="<?= page('work')->url() ?>">View all work <?= ja_icon('diagonal') ?></a></div>
   <div class="project-grid"><?php foreach (page('work')->children()->listed()->limit(2) as $project) snippet('project-preview', compact('project')) ?></div>
 </section>
-<section class="home-services wrap" aria-label="Our services">
+<section class="home-services wrap" aria-labelledby="home-services-title">
+  <h2 class="eyebrow" id="home-services-title">How we can help</h2>
   <div class="service-index"><?php foreach (ja_services() as $i => $service): ?><a href="<?= page('services')->url() ?>#<?= $service->slug()->esc() ?>"><span class="service-number">0<?= $i + 1 ?></span><span><?= $service->title()->esc() ?></span><?= ja_icon() ?></a><?php endforeach ?></div>
 </section>
 <?php snippet('invitation') ?>

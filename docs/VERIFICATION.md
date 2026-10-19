@@ -39,3 +39,10 @@ Validation: 55 application checks and 73 localhost HTTP checks passed. Five main
 Added company introduction, project summaries and optional case-study sections based on the existing archive. Improved hero crop and internal heading scale. Added mobile WhatsApp shortcut with safe-area spacing, hidden during form entry and menu use. Editor fields now include image guidance and optional verified outcomes.
 
 Validation: 55 application checks passed. Homepage, work index, both project stories and contact page checked at 1440/390/320px without horizontal overflow. Browser checks confirmed WhatsApp hides during input focus and menu use. No private SMTP configuration or complete SMTP environment is available; live delivery remains unverified. Original high-resolution photos and original brand artwork have not been supplied.
+
+
+## Final messaging and spacing pass — 19 October 2026
+
+Updated the hero to “Build your business. Create memorable experiences.”, clarified the supporting copy, tightened section spacing and labelled the service list. Moved the documented project role above the cover image, omitting that section when not supplied.
+
+Verified the homepage and both project pages at 1440, 768, 390 and 320px: no horizontal overflow. Reviewed mobile homepage and desktop project layout visually. PHP syntax and diff whitespace checks passed. Live inbox delivery, owner account setup, physical-phone checks and higher-resolution image replacement remain pending access or original files.
