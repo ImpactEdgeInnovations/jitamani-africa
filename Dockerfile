@@ -2,8 +2,8 @@ FROM php:8.4-apache
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        git unzip libicu-dev libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev libonig-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+        git unzip libicu-dev libzip-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev libwebp-dev libonig-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && docker-php-ext-install -j$(nproc) gd intl mbstring zip exif \
     && a2dismod mpm_event mpm_worker \
     && a2enmod mpm_prefork rewrite headers \
