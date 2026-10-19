@@ -2,11 +2,11 @@ Title: Home
 
 ----
 
-Metatitle: Jitamani Africa — AI for Business, Training & Experiences
+Metatitle: Jitamani Africa — Business Consultancy, Events & Marketing
 
 ----
 
-Description: Put AI to work with Jitamani Africa. Explore AI consulting, professional training, platforms we have developed, and events in Kenya.
+Description: Bespoke consultancy, strategic insight, event curation and marketing from Jitamani Africa, based in Kenya and working across creative and entrepreneurial sectors.
 
 ----
 
@@ -18,15 +18,15 @@ Headline: Grow your business.
 
 ----
 
-Headlinesecond: work.
+Headlinesecond: life.
 
 ----
 
-Headlineaccent: Put AI to
+Headlineaccent: Bring ideas to
 
 ----
 
-Intro: Practical AI consulting, professional training, business development and memorable experiences—built around your organisation’s needs.
+Intro: Bespoke consultancy, strategic insight, event curation and transformative marketing—based in Kenya, built around your business.
 
 ----
 
@@ -61,16 +61,8 @@ Introductionheading: A creative partner, rooted in Kenya.
 
 ----
 
-Introductiontext: We are a women-led consultancy based in Kenya. We develop AI-powered platforms, help businesses put AI to practical use, and bring people together through thoughtful experiences.
+Introductiontext: We empower businesses to reach their full potential through strategic insight, innovative event curation and transformative marketing solutions. Our work connects business ambition with Africa’s creative and entrepreneurial spirit.
 
 ----
 
-Aiheading: Make AI useful in your business.
-
-----
-
-Aiconsulting: Identify useful applications, improve everyday workflows and plan adoption around the way your business works.
-
-----
-
-Aitraining: Practical workshops for leaders and teams, shaped around their roles, experience and day-to-day work.
+Sectors: Food, Fashion, Fitness, Film, Non-Profit, Tech, Music and beyond.

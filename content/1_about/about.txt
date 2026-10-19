@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Description: Meet Jitamani Africa, a women-led consultancy in Kenya connecting practical AI, business development and memorable experiences.
+Description: Meet Jitamani Africa, a Kenya-based consultancy empowering businesses across food, fashion, fitness, film, non-profit, tech, music and beyond.
 
 ----
 
@@ -14,11 +14,15 @@ Headlineaccent: grounded in purpose.
 
 ----
 
-Intro: A women-led consultancy connecting practical AI, business development and thoughtfully delivered experiences.
+Intro: Based in Kenya, we offer bespoke consultancy for creative and entrepreneurial businesses across sectors.
 
 ----
 
-Text: Jitamani Africa brings together strategic thinking and creative execution. We develop AI-powered platforms and help organisations explore AI through consulting and professional training. Our work also spans business development, events, marketing and sales, with people and purpose at its centre.
+Text: We work across sectors as dynamic as Food, Fashion, Fitness, Film, Non-Profit, Tech, Music and beyond. Our purpose is to empower businesses to reach their full potential through strategic insight, innovative event curation and transformative marketing solutions.
+
+We help shape the future of Africa’s creative and entrepreneurial spirit by connecting clear business thinking with creative execution.
+
+Our capabilities also include AI consulting, professional training and digital platform development—practical tools that support the wider ambitions of the businesses we work with.
 
 ----
 

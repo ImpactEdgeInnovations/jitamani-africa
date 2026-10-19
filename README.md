@@ -1,6 +1,6 @@
 # Jitamani Africa
 
-A small, bespoke Kirby website for AI consulting, professional training, business services and events. The approved design uses warm ivory, deep aubergine, upright self-hosted Inter and original event photography. No frontend framework, Node server, database service, CRM or custom admin is needed.
+A small, bespoke Kirby website for Jitamani Africa’s consultancy, business strategy, events, marketing, sales and supporting AI capabilities. The approved design uses warm ivory, deep aubergine, upright self-hosted Inter and original event photography. No frontend framework, Node server, database service, CRM or custom admin is needed.
 
 ## Run locally
 

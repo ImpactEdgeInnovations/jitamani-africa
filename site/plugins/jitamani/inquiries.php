@@ -5,7 +5,7 @@ final class JitamaniInquiries
 {
     public static function interests(): array
     {
-        return ['ai-consulting' => 'AI consulting', 'ai-training' => 'Professional AI training', 'ai-development' => 'AI platform development', 'business-development' => 'Business development', 'events' => 'Events & experiences', 'marketing' => 'Marketing', 'sales' => 'Sales', 'other' => 'Something else'];
+        return ['business-development' => 'Business development', 'events' => 'Events & experiences', 'marketing' => 'Marketing', 'sales' => 'Sales', 'ai-consulting' => 'AI consulting', 'ai-training' => 'Professional AI training', 'ai-development' => 'AI platform development', 'other' => 'Something else'];
     }
 
     public static function validate(array $input): array

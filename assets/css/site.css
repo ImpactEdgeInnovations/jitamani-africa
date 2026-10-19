@@ -1163,13 +1163,6 @@ figcaption {
 @media(max-width:370px) { .home-hero h1 { font-size:33px; } }
 
 /* Practical AI services and clearly separated portfolio disciplines. */
-.home-ai { padding-block:44px; }
-.home-ai > .eyebrow { margin-bottom:12px; }
-.home-ai > h2 { max-width:780px; font-size:clamp(30px,3vw,44px); }
-.ai-offerings { display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:28px; }
-.ai-offerings > div { border-top:1px solid var(--line); padding-top:22px; }
-.ai-offerings h3 { font-size:24px; }
-.ai-offerings p { color:var(--muted); font-size:15px; max-width:490px; margin:14px 0 20px; }
 .platform-showcase { padding-block:36px; scroll-margin-top:24px; }
 .platform-list { border-bottom:1px solid var(--line); }
 .platform-preview { display:grid; grid-template-columns:.85fr 1.15fr; align-items:center; gap:40px; border-top:1px solid var(--line); padding-block:28px; }
@@ -1194,9 +1187,6 @@ figcaption {
 .service-inquiry { font-size:13px; margin-top:22px; }
 .form-field select { font:inherit; color:var(--ink); width:100%; min-height:48px; padding:10px 2px; background:var(--paper); border:0; border-bottom:1px solid #8e7c85; border-radius:0; }
 @media(max-width:760px) {
- .home-ai { padding-block:32px; }
- .ai-offerings { grid-template-columns:1fr; gap:28px; margin-top:24px; }
- .ai-offerings h3 { font-size:23px; }
  .platform-showcase { padding-block:28px; }
  .platform-preview { grid-template-columns:1fr; gap:22px; padding-block:24px; }
  .platform-art { min-height:200px; padding:24px; }
@@ -1204,4 +1194,21 @@ figcaption {
  .platform-copy h3 { font-size:27px; }
  .platform-copy > p:not(.eyebrow) { font-size:15px; }
  .platform-project-hero .platform-art { min-height:260px; padding:24px; }
+}
+
+/* Consultancy-led homepage: sectors and digital work support the main story. */
+.home-introduction .sector-line { margin-top:24px; color:var(--ink); font-size:18px; line-height:1.7; }
+.sector-line > .eyebrow { display:block; margin-bottom:6px; }
+.home-digital { display:grid; grid-template-columns:1.1fr .9fr; gap:64px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:34px; margin-top:40px; }
+.home-digital h2 { font-size:clamp(28px,2.7vw,38px); max-width:530px; margin-top:10px; }
+.home-digital p:not(.eyebrow) { font-size:14px; color:var(--muted); max-width:470px; margin-top:16px; }
+.digital-project-links > a:not(.text-link) { display:flex; justify-content:space-between; align-items:center; gap:20px; padding-block:12px; border-bottom:1px solid var(--line); font-size:17px; }
+.digital-project-links .text-link { margin-top:20px; font-size:13px; }
+.story-intro > p + p { margin-top:20px; }
+.page-work .platform-showcase { padding-top:0; padding-bottom:60px; }
+@media(max-width:760px) {
+ .home-introduction .sector-line { font-size:16px; }
+ .home-digital { grid-template-columns:1fr; gap:22px; padding-block:28px; margin-top:30px; }
+ .home-digital h2 { font-size:29px; }
+ .page-work .platform-showcase { padding-bottom:40px; }
 }

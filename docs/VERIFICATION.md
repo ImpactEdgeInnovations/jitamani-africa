@@ -53,3 +53,10 @@ Verified the homepage and both project pages at 1440, 768, 390 and 320px: no hor
 Added three owner-confirmed AI platform projects: DukaPilot, Her Africa Table and CaseReady. Platform work and event experiences are separate sections, and the two original events/article paths remain. No training or event history was invented for the platforms. Platform artwork is typographic, with public website links. Added homepage AI consulting/training and service offerings, updated About/metadata, and an optional allowlisted inquiry interest.
 
 Validation: 62 application checks and 84 local HTTP checks passed, including platform/event separation, preserved archive content, three new detail routes, training preselection and saved inquiry interest. Seven affected page/route variants checked at 1440/768/390/320px (28 states): no horizontal overflow. Work index visually reviewed on desktop and mobile. No external mail sent during tests.
+
+
+## Consultancy-led positioning
+
+Rebalanced the homepage, About, metadata and service order around bespoke consultancy, strategic insight, event curation and marketing. Added the owner’s sectors: Food, Fashion, Fitness, Film, Non-Profit, Tech, Music and beyond. The homepage digital-work feature is now compact; the full three-platform portfolio and AI services remain available. Events and platforms retain separate sections.
+
+Validation: 62 application checks passed. Four affected templates checked at 1440/390/320px (12 states), with no horizontal overflow. Homepage visually reviewed and sector text verified.
