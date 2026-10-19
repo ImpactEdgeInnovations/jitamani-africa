@@ -49,7 +49,19 @@ After review, remove the demo service/project when it is no longer needed.
 
 ## Validation status
 
-Application PHP syntax and demo-mode behaviour are checked locally. Docker is
-not installed on the preparation machine, so the container image and Railway
-deployment must be validated by the first Railway build and its logs. No live
-demo has been provisioned as part of preparing these files.
+Application PHP syntax and demo-mode behaviour were checked locally. The
+container was then built and deployed on Railway. The public HTTPS homepage
+was visually verified with its stylesheet and all three responsive photographs
+loaded. Contact was checked for the explicit demo notice and disabled form.
+
+## Live review deployment
+
+Public demo: https://jitamani-africa-production.up.railway.app/ (target port 80).
+The runtime entry script normalizes Apache modules before startup. The demo
+uses Railway’s `RAILWAY_PUBLIC_DOMAIN` to generate HTTPS asset URLs behind the
+proxy; production canonical redirects remain disabled for this review site.
+The image includes GD with WebP support for responsive photographs.
+
+Auto-deploy was disabled in this workspace. To deploy future source updates,
+open the service, press Cmd+K (Ctrl+K on Windows), and choose **Deploy latest
+commit**. Restarting an old deployment does not update its source code.
