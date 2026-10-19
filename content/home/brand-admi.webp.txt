@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: ADMI
+
+----
+
+Credit: https://admi.africa/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FADMI%20(White)logo-01.8315cd3f.png&w=256&q=75

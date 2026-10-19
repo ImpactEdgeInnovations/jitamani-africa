@@ -1181,6 +1181,34 @@ figcaption {
 .home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:420px; }
 .home-introduction p:not(.eyebrow) { max-width:660px; margin-block:16px; color:var(--muted); }
 .home-introduction .introduction-copy > p:first-child { margin-top:0; }
+.brand-section { padding-block:38px 44px; border-bottom:1px solid var(--line); }
+.brand-section-heading { display:flex; align-items:baseline; justify-content:space-between; gap:24px; margin-bottom:28px; }
+.brand-section-heading h2 { font-size:30px; }
+.brand-section-heading .text-link { font-size:12px; }
+.brand-section--featured .brand-section-heading h2 { font-size:18px; letter-spacing:-.02em; }
+.brand-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:30px 40px; list-style:none; padding:0; }
+.brand-section--featured .brand-grid { grid-template-columns:repeat(6,minmax(0,1fr)); gap:28px; }
+.brand-logo { min-width:0; height:96px; display:flex; align-items:center; justify-content:center; padding:12px; }
+.brand-logo img { width:auto; height:auto; max-width:100%; max-height:72px; object-fit:contain; }
+.brand-logo--dark { background:var(--ink); }
+.brand-name { font-size:17px; font-weight:600; text-align:center; letter-spacing:-.02em; }
+.brand-grid figcaption { text-align:center; font-size:11px; line-height:1.5; margin-top:10px; }
+.brand-section--featured .brand-logo { height:78px; padding:8px; }
+.brand-section--featured .brand-logo img { max-height:62px; }
+.page-about .brand-section { border-top:1px solid var(--line); border-bottom:0; padding-block:40px 64px; }
+@media(max-width:1000px) and (min-width:761px) {
+  .brand-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
+  .brand-section--featured .brand-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:760px) {
+  .brand-section { padding-block:28px 32px; }
+  .brand-section-heading { flex-direction:column; align-items:start; gap:12px; margin-bottom:24px; }
+  .brand-section-heading h2 { font-size:28px; }
+  .brand-grid,.brand-section--featured .brand-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+  .brand-logo,.brand-section--featured .brand-logo { height:86px; }
+  .brand-logo img,.brand-section--featured .brand-logo img { max-height:66px; }
+  .page-about .brand-section { padding-block:30px 40px; }
+}
 .page-home .project-caption > span { display:block; margin-top:6px; color:var(--wine); }
 .project-summary { font-size:14px; color:var(--muted); max-width:520px; margin-top:10px; }
 .project-story-link { margin-top:16px; font-size:13px; }

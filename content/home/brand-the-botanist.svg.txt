@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: The Botanist
+
+----
+
+Credit: https://www.thebotanist.com/cdn/shop/t/3/assets/style.css?v=34838131007532128601790250689

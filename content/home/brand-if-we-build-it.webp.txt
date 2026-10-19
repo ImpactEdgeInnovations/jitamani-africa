@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: If We Build It
+
+----
+
+Credit: https://static.wixstatic.com/media/1b8979_d91e540d2f2d47fc899066000580bc9f~mv2.png/v1/crop/x_0,y_387,w_1000,h_203/fill/w_385,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/horizontalifwe_logo_white.png

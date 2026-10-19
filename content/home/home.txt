@@ -66,3 +66,92 @@ Introductiontext: We empower businesses to reach their full potential through st
 ----
 
 Sectors: Food, Fashion, Fitness, Film, Non-Profit, Tech, Music and beyond.
+
+----
+
+Brandsheading: Brands we’ve worked with
+
+----
+
+Brands:
+
+- name: "254 Brewing Co."
+  logo: "brand-254-brewing.webp"
+  featured: true
+  dark: false
+- name: "Hero"
+  logo: "brand-hero.webp"
+  featured: true
+  dark: false
+- name: "Rémy Martin"
+  logo: "brand-remy-martin.webp"
+  featured: true
+  dark: false
+- name: "The Wine Box"
+  logo: "brand-wine-box.webp"
+  featured: true
+  dark: false
+- name: "The Botanist"
+  logo: "brand-the-botanist.svg"
+  featured: true
+  dark: false
+- name: "Uncommon"
+  logo: "brand-uncommon.svg"
+  featured: true
+  dark: false
+- name: "ADMI"
+  logo: "brand-admi.webp"
+  featured: false
+  dark: true
+- name: "Deo Media Productions"
+  logo: "brand-deo-media.webp"
+  featured: false
+  dark: true
+- name: "If We Build It"
+  logo: "brand-if-we-build-it.webp"
+  featured: false
+  dark: true
+- name: "GTC Nairobi"
+  logo: "brand-gtc.webp"
+  featured: false
+  dark: false
+- name: "First Eye Technologies"
+  logo: "brand-first-eye.webp"
+  featured: false
+  dark: false
+- name: "Bruichladdich"
+  logo: "brand-bruichladdich.webp"
+  featured: false
+  dark: false
+- name: "Bahari"
+  logo: "brand-bahari.webp"
+  featured: false
+  dark: false
+- name: "Moto Republik"
+  logo: "brand-moto-republik.webp"
+  featured: false
+  dark: true
+- name: "ZTN"
+  logo: ""
+  featured: false
+  dark: false
+- name: "Vambo AI"
+  logo: "brand-vambo.webp"
+  featured: false
+  dark: false
+- name: "Zimbabwe Youth Council"
+  logo: ""
+  featured: false
+  dark: false
+- name: "V5 Digital"
+  logo: "brand-v5.webp"
+  featured: false
+  dark: true
+- name: "Co-creation Hub"
+  logo: "brand-cchub.webp"
+  featured: false
+  dark: false
+- name: "University of Botswana"
+  logo: "brand-university-botswana.webp"
+  featured: false
+  dark: false

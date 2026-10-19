@@ -14,6 +14,12 @@ Use **Shared photographs** for the homepage/About images. Upload JPEG, PNG, WebP
 
 Project-specific photos live inside that project's editor. Use original high-quality files; avoid screenshots of screenshots or images copied from unapproved third parties. The renderer does not stretch a low-resolution source into a larger download. Always preview faces and important subjects at phone and desktop widths.
 
+## Brands and collaborators
+
+Open **Home → Brands and collaborators** to edit the collection shared by Home and About. Update a brand name, choose or upload its official logo, and drag entries to reorder them. The first six entries marked **Show on homepage** appear in the selected grid; all entries appear on About. The homepage heading is editable separately.
+
+Enable **Logo needs a dark background** for white artwork. Leave the logo empty to show the brand name instead of a broken or unsuitable image. Retain the original artwork and colors, and record its source URL in the uploaded file’s details. Add only relationships the business can substantiate.
+
 ## Projects
 
 Open **Our Work → Add**. Enter the project title, category/location if appropriate, short introduction and factual story. Choose a cover and optional gallery images; add captions/descriptions. Link to an archive story only when it is relevant. Save a draft until the text and image rights are approved, then publish. Order the projects in the list; the homepage uses the two most recent positions in reverse order.

@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: V5 Digital
+
+----
+
+Credit: https://static.wixstatic.com/media/80c949_f92c83656b49410b932f03584838b73b~mv2.png/v1/crop/x_0,y_0,w_1355,h_627/fill/w_128,h_59,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/V5_WhiteYellow.png

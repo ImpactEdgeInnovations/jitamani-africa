@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: The Wine Box
+
+----
+
+Credit: https://jitamaniafrica.com/images/winebox.png

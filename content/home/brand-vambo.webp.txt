@@ -1,0 +1,9 @@
+Template: brand-logo
+
+----
+
+Alt: Vambo AI
+
+----
+
+Credit: https://www.vambo.ai/logo.png

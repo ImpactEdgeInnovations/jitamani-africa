@@ -1,0 +1,13 @@
+title: Brand logo
+accept:
+  type: image
+  mime: image/jpeg, image/png, image/webp, image/svg+xml
+  maxsize: 2000000
+fields:
+  alt:
+    label: Brand name
+    type: text
+    required: true
+  credit:
+    label: Original source URL
+    type: url
