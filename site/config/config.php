@@ -70,6 +70,14 @@ $config = [
     ],
 ];
 
+// Railway terminates TLS before Apache. Use the platform's deployment value,
+// never a client-supplied forwarded header, when generating demo asset URLs.
+if ($demo && ($demoDomain = getenv('RAILWAY_PUBLIC_DOMAIN'))) {
+    if (preg_match('/^[a-z0-9.-]+$/i', $demoDomain)) {
+        $config['url'] = 'https://' . $demoDomain;
+    }
+}
+
 // Optional untracked private settings, usable on both cPanel and CLI maintenance.
 if (is_file(__DIR__ . '/config.local.php')) {
     $config = array_replace_recursive($config, require __DIR__ . '/config.local.php');
