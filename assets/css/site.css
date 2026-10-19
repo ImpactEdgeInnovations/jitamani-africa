@@ -1175,12 +1175,12 @@ figcaption {
 
 /* Content and mobile contact refinements. */
 .home-hero-photo img { object-position:50% 72%; }
-.home-introduction { display:grid; grid-template-columns:1fr 2fr; gap:48px; padding-block:56px; border-bottom:1px solid var(--line); }
-.home-introduction .eyebrow { padding-top:8px; }
-.introduction-brand { display:flex; flex-direction:column; align-items:center; gap:12px; }
-.introduction-monogram { width:min(100%,240px); height:auto; filter:url(#ja-intro-colors); }
-.home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:620px; }
-.home-introduction p:not(.eyebrow) { max-width:660px; margin-block:20px; color:var(--muted); }
+.home-introduction { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:clamp(32px,6vw,80px); padding-block:44px; border-bottom:1px solid var(--line); }
+.introduction-heading > .eyebrow { margin-bottom:18px; }
+.introduction-copy { padding-top:36px; }
+.home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:420px; }
+.home-introduction p:not(.eyebrow) { max-width:660px; margin-block:16px; color:var(--muted); }
+.home-introduction .introduction-copy > p:first-child { margin-top:0; }
 .page-home .project-caption > span { display:block; margin-top:6px; color:var(--wine); }
 .project-summary { font-size:14px; color:var(--muted); max-width:520px; margin-top:10px; }
 .project-story-link { margin-top:16px; font-size:13px; }
@@ -1191,10 +1191,8 @@ figcaption {
 .mobile-whatsapp { display:none; }
 @media(max-width:760px) {
   body { padding-bottom:calc(66px + env(safe-area-inset-bottom)); }
-  .home-introduction { grid-template-columns:1fr; gap:18px; padding-block:36px; }
-  .introduction-brand { flex-direction:row; align-items:center; justify-content:space-between; gap:20px; }
-  .introduction-brand .eyebrow { padding-top:0; }
-  .introduction-monogram { width:84px; flex-shrink:0; }
+  .home-introduction { grid-template-columns:1fr; gap:18px; padding-block:30px; }
+  .introduction-copy { padding-top:0; }
   .home-introduction h2 { font-size:30px; }
   .home-introduction p:not(.eyebrow) { font-size:15px; margin-block:16px; }
   .home-hero-photo img { object-position:50% 75%; }
@@ -1207,8 +1205,6 @@ figcaption {
 
 /* Final messaging pass: a longer, specific headline with a compact rhythm. */
 .home-hero h1 { font-size:clamp(42px,4.2vw,62px); line-height:1.08; letter-spacing:-.04em; max-width:580px; }
-.home-introduction { padding-block:44px; }
-.home-introduction p:not(.eyebrow) { margin-block:16px; }
 .selected-work { padding-top:38px; }
 .home-services { padding-top:38px; padding-bottom:38px; }
 .home-services > .eyebrow { margin-bottom:16px; }
@@ -1216,7 +1212,6 @@ figcaption {
 .project-role p { color:var(--muted); font-size:15px; margin-top:8px; line-height:1.6; }
 @media(max-width:760px) {
   .home-hero h1 { font-size:clamp(36px,8.8vw,54px); }
-  .home-introduction { padding-block:30px; }
   .selected-work { padding-top:30px; }
   .home-services { padding-block:30px; }
 }

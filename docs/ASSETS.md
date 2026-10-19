@@ -10,10 +10,10 @@ The build uses original image files from the existing public Jitamani website, n
 
 Inter and Newsreader were obtained through Google Fonts. Their SIL Open Font License files are in `assets/fonts/`. Fonts are self-hosted; there are no external font requests. The current design uses only Inter 400/600 for consistent upright headings and body text. Newsreader files remain in the repository but are not loaded.
 
-The header pairs the upright typographic wordmark with the supplied JA monogram, recolored aubergine on ivory. It uses the same static `ja-still.png` frame as the introduction and closing fallback, with its own color filter and no animation. The simple JA favicon remains a typographic navigation asset, not a recreation of the original JA logo.
+The header pairs the upright typographic wordmark with the supplied JA monogram, recolored aubergine on ivory. It uses the same static `ja-still.png` frame as the closing fallback, with its own color filter and no animation. The simple JA favicon remains a typographic navigation asset, not a recreation of the original JA logo.
 
 The owner supplied `2.webm` and `loop.webm` on 19 October 2026 and approved the recolored `2.webm` concept. `assets/motion/ja-reveal.webm` preserves that original supplied video (78,437 bytes). The homepage closing invitation maps its black/white tones to aubergine/ivory using an SVG color filter. `ja-still.png` is a captured complete-monogram frame from the same clip, used without JavaScript, for reduced motion, after the one-time reveal and if video playback fails. Video data loads only when the mark enters view and motion is permitted. The existing photography remains unchanged.
 
-The homepage introduction reuses `ja-still.png` as a static terracotta-on-ivory monogram beneath “Meet Jitamani.” On phones it sits alongside the label at a smaller size. This treatment uses its own color filter and adds no second video or animation.
+The homepage introduction uses a two-column text layout: label and heading on the left, company description and sectors on the right. Branding appears in the header and closing invitation, with no repeated monogram in the introduction.
 
 The two archive articles preserve their original narrative and 2024 publication dates/URLs. Only draft citation debris, duplicate sidebar material and broken self-title links were removed. Statements in historical articles remain historical company copy; the new portfolio summaries do not introduce new quantitative claims.

@@ -11,12 +11,11 @@
   </div>
 </section>
 <section class="home-introduction wrap" aria-labelledby="introduction-title">
-  <div class="introduction-brand">
+  <div class="introduction-heading">
     <p class="eyebrow">Meet Jitamani</p>
-    <svg class="brand-color-filter" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><filter id="ja-intro-colors" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="table" tableValues=".968628 .600000"/><feFuncG type="table" tableValues=".952942 .286275"/><feFuncB type="table" tableValues=".917648 .184314"/></feComponentTransfer></filter></defs></svg>
-    <img class="introduction-monogram" src="<?= url('assets/motion/ja-still.png') ?>" alt="" width="800" height="800" loading="lazy" decoding="async">
+    <h2 id="introduction-title"><?= $page->introductionheading()->esc() ?></h2>
   </div>
-  <div><h2 id="introduction-title"><?= $page->introductionheading()->esc() ?></h2><p><?= $page->introductiontext()->esc() ?></p><p class="sector-line"><span class="eyebrow">Across sectors</span><?= $page->sectors()->esc() ?></p><a class="text-link" href="<?= page('about')->url() ?>">More about us <?= ja_icon('diagonal') ?></a></div>
+  <div class="introduction-copy"><p><?= $page->introductiontext()->esc() ?></p><p class="sector-line"><span class="eyebrow">Across sectors</span><?= $page->sectors()->esc() ?></p><a class="text-link" href="<?= page('about')->url() ?>">More about us <?= ja_icon('diagonal') ?></a></div>
 </section>
 <section class="selected-work wrap" aria-labelledby="selected-work-title">
   <div class="section-heading"><div><p class="eyebrow">Events & experiences</p><h2 id="selected-work-title"><?= $page->workheading()->esc() ?></h2></div><a class="text-link" href="<?= page('work')->url() ?>">View all work <?= ja_icon('diagonal') ?></a></div>
