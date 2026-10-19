@@ -36,3 +36,19 @@ function ja_services()
 {
     return page('services')->services()->toStructure();
 }
+
+function ja_platforms()
+{
+    return page('work')->children()->listed()->filterBy('worktype', 'platform');
+}
+
+function ja_events()
+{
+    return page('work')->children()->listed()->filter(fn ($project) => $project->worktype()->value() !== 'platform');
+}
+
+function ja_platform_url($project): ?string
+{
+    $url = $project->externalurl()->value();
+    return filter_var($url, FILTER_VALIDATE_URL) && parse_url($url, PHP_URL_SCHEME) === 'https' ? $url : null;
+}

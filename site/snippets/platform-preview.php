@@ -1,0 +1,4 @@
+<article class="platform-preview">
+  <a class="platform-visual" href="<?= $project->url() ?>" aria-label="Explore <?= esc($project->title()->value(), 'attr') ?>"><?php snippet('platform-art', compact('project')) ?></a>
+  <div class="platform-copy"><p class="eyebrow">Developed by Jitamani Africa</p><h3><a href="<?= $project->url() ?>"><?= $project->title()->esc() ?></a></h3><p><?= $project->intro()->esc() ?></p><div class="platform-links"><a class="text-link" href="<?= $project->url() ?>">Explore the project <?= ja_icon('diagonal') ?></a><?php if ($external = ja_platform_url($project)): ?><a class="text-link" href="<?= esc($external, 'attr') ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit <?= esc($project->title()->value(), 'attr') ?> (opens in a new tab)">Visit platform <?= ja_icon('diagonal') ?></a><?php endif ?></div></div>
+</article>

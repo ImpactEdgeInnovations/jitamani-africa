@@ -32,6 +32,17 @@ fields:
     type: textarea
     buttons: false
     help: A brief, specific explanation of who you are and what you bring.
+  aiheading:
+    label: AI section heading
+    type: text
+  aiconsulting:
+    label: AI consulting description
+    type: textarea
+    buttons: false
+  aitraining:
+    label: AI training description
+    type: textarea
+    buttons: false
   workheading:
     type: text
   metatitle:

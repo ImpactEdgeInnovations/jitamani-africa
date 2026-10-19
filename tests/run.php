@@ -13,14 +13,20 @@ function check(bool $condition, string $message): void {
 }
 try {
     foreach (['home', 'about', 'services', 'work', 'contact', 'blogs', 'privacy', 'error'] as $id) check(page($id) !== null, "Content exists: $id");
-    check(ja_services()->count() === 4, 'Four editable services');
+    check(ja_services()->findBy('slug', 'ai-business') !== null && ja_services()->findBy('slug', 'ai-training') !== null, 'AI consulting and training services available');
     foreach (ja_services() as $service) check($service->title()->isNotEmpty() && $service->slug()->isNotEmpty(), 'Service label and anchor present');
-    check(page('work')->children()->listed()->count() === 2, 'Two original project stories only');
-    foreach (page('work')->children()->listed() as $project) check($project->cover()->toFile() !== null, 'Project has a real cover photograph');
+    check(ja_events()->has('work/the-chef-and-the-cook') && ja_events()->has('work/cocktail-takeover'), 'Original event stories remain in the event portfolio');
+    foreach (['dukapilot', 'her-africa-table', 'caseready'] as $slug) {
+        $project = page('work/' . $slug);
+        check($project && ja_platforms()->has($project->id()) && !ja_events()->has($project->id()) && ja_platform_url($project) !== null, 'AI platform is separated from events and links to its live site: ' . $slug);
+    }
+    foreach (ja_events() as $project) check($project->cover()->toFile() !== null, 'Project has a real cover photograph');
     foreach (page('blogs')->children()->published() as $article) check($article->date()->toDate('Y') === '2024' && strlen($article->text()->value()) > 2000, 'Original article content and year retained');
     $valid = ['name' => 'Test Visitor', 'email' => 'visitor@example.test', 'phone' => '', 'message' => 'A local test inquiry.'];
     check(JitamaniInquiries::validate($valid) === [], 'Valid inquiry accepted');
     foreach (['name' => '', 'email' => "bad\r\nBcc:other@example.test", 'message' => 'Short', 'phone' => str_repeat('0', 41)] as $field => $bad) check(isset(JitamaniInquiries::validate(array_replace($valid, [$field => $bad]))[$field]), "Invalid $field rejected");
+    check(JitamaniInquiries::validate(array_replace($valid, ['interest' => 'ai-training'])) === [], 'Training interest accepted');
+    check(isset(JitamaniInquiries::validate(array_replace($valid, ['interest' => '<script>bad</script>']))['interest']), 'Unknown interest rejected');
     for ($i = 0; $i < 5; $i++) check(JitamaniInquiries::rateLimit('unit-test-ip'), 'Within rate limit');
     check(!JitamaniInquiries::rateLimit('unit-test-ip'), 'Sixth rapid inquiry blocked');
     $record = array_merge($valid, ['id' => 'test-' . bin2hex(random_bytes(4)), 'created' => gmdate('c'), 'state' => 'pending']);

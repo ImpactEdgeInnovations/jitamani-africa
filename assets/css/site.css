@@ -1161,3 +1161,47 @@ figcaption {
   .home-services { padding-block:30px; }
 }
 @media(max-width:370px) { .home-hero h1 { font-size:33px; } }
+
+/* Practical AI services and clearly separated portfolio disciplines. */
+.home-ai { padding-block:44px; }
+.home-ai > .eyebrow { margin-bottom:12px; }
+.home-ai > h2 { max-width:780px; font-size:clamp(30px,3vw,44px); }
+.ai-offerings { display:grid; grid-template-columns:1fr 1fr; gap:48px; margin-top:28px; }
+.ai-offerings > div { border-top:1px solid var(--line); padding-top:22px; }
+.ai-offerings h3 { font-size:24px; }
+.ai-offerings p { color:var(--muted); font-size:15px; max-width:490px; margin:14px 0 20px; }
+.platform-showcase { padding-block:36px; scroll-margin-top:24px; }
+.platform-list { border-bottom:1px solid var(--line); }
+.platform-preview { display:grid; grid-template-columns:.85fr 1.15fr; align-items:center; gap:40px; border-top:1px solid var(--line); padding-block:28px; }
+.platform-visual { display:block; }
+.platform-art { min-height:220px; padding:28px; display:flex; flex-direction:column; justify-content:space-between; gap:28px; color:#f7f3ea; }
+.platform-art-retail { background:#163e34; }
+.platform-art-community { background:#432638; }
+.platform-art-records { background:#202d42; }
+.platform-art .eyebrow { color:#e6e4b2; font-size:9px; }
+.platform-wordmark { font-size:clamp(30px,3.2vw,48px); font-weight:600; letter-spacing:-.05em; line-height:1.08; }
+.platform-art-footer { display:flex; justify-content:space-between; font-size:11px; opacity:.9; border-top:1px solid #ffffff40; padding-top:14px; }
+.platform-copy h3 { font-size:30px; margin-top:10px; }
+.platform-copy > p:not(.eyebrow) { max-width:580px; margin-top:14px; color:var(--muted); font-size:16px; }
+.platform-links { display:flex; flex-wrap:wrap; gap:18px 28px; margin-top:22px; }
+.platform-links .text-link { font-size:13px; }
+.work-jump-links { display:flex; gap:20px 30px; flex-wrap:wrap; margin-top:26px; }
+.work-jump-links .text-link { font-size:13px; }
+.page-work .work-collection { padding-top:36px; scroll-margin-top:24px; }
+.platform-project-hero .platform-art { min-height:300px; padding:40px; }
+.platform-project-hero .platform-wordmark { font-size:clamp(40px,6vw,80px); }
+.platform-project-hero > .text-link { margin-top:20px; }
+.service-inquiry { font-size:13px; margin-top:22px; }
+.form-field select { font:inherit; color:var(--ink); width:100%; min-height:48px; padding:10px 2px; background:var(--paper); border:0; border-bottom:1px solid #8e7c85; border-radius:0; }
+@media(max-width:760px) {
+ .home-ai { padding-block:32px; }
+ .ai-offerings { grid-template-columns:1fr; gap:28px; margin-top:24px; }
+ .ai-offerings h3 { font-size:23px; }
+ .platform-showcase { padding-block:28px; }
+ .platform-preview { grid-template-columns:1fr; gap:22px; padding-block:24px; }
+ .platform-art { min-height:200px; padding:24px; }
+ .platform-wordmark { font-size:36px; }
+ .platform-copy h3 { font-size:27px; }
+ .platform-copy > p:not(.eyebrow) { font-size:15px; }
+ .platform-project-hero .platform-art { min-height:260px; padding:24px; }
+}

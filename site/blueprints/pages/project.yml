@@ -7,6 +7,35 @@ fields:
   title:
     type: text
     required: true
+  worktype:
+    label: Type of work
+    type: select
+    default: event
+    required: true
+    options:
+      platform: AI & Digital Platform
+      event: Event & Experience
+  sector:
+    label: Platform sector
+    type: text
+    when:
+      worktype: platform
+  platformtheme:
+    label: Platform title artwork colour
+    type: select
+    default: retail
+    options:
+      retail: Forest
+      community: Aubergine
+      records: Ink
+    when:
+      worktype: platform
+  externalurl:
+    label: Live platform website
+    type: url
+    help: Use the complete HTTPS address.
+    when:
+      worktype: platform
   category:
     label: Type of experience
     type: text

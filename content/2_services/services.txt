@@ -2,7 +2,7 @@ Title: Services
 
 ----
 
-Description: Business development, event curation and execution, marketing consultancy and sales management from Jitamani Africa.
+Description: Practical AI consulting, professional AI training, platform development, business development, events, marketing and sales.
 
 ----
 
@@ -14,12 +14,32 @@ Headlineaccent: Thoughtful delivery.
 
 ----
 
-Intro: Four connected capabilities. One considered approach to your business.
+Intro: Practical AI expertise, stronger businesses and thoughtfully delivered experiences. Start with the support your organisation needs.
 
 ----
 
 Services:
 
+-
+  slug: ai-business
+  title: AI for Business
+  summary: Practical applications, clearer workflows and a plan for adoption.
+  audience: For businesses exploring how AI can support their operations, people and customer experience.
+  activities: |
+    AI readiness and opportunity assessments
+    Workflow improvement and automation planning
+    AI-powered platform development
+    Adoption guidance and follow-up support
+-
+  slug: ai-training
+  title: Professional AI Training
+  summary: Build confidence through practical, role-based learning.
+  audience: For leaders and teams looking to apply AI thoughtfully in their everyday work.
+  activities: |
+    Leadership briefings and team workshops
+    Practical prompting and output evaluation
+    Responsible use and information handling
+    Workshops tailored to your roles and experience
 -
   slug: business-development
   title: Business Development

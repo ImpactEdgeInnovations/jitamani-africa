@@ -46,3 +46,10 @@ Validation: 55 application checks passed. Homepage, work index, both project sto
 Updated the hero to “Build your business. Create memorable experiences.”, clarified the supporting copy, tightened section spacing and labelled the service list. Moved the documented project role above the cover image, omitting that section when not supplied.
 
 Verified the homepage and both project pages at 1440, 768, 390 and 320px: no horizontal overflow. Reviewed mobile homepage and desktop project layout visually. PHP syntax and diff whitespace checks passed. Live inbox delivery, owner account setup, physical-phone checks and higher-resolution image replacement remain pending access or original files.
+
+
+## AI positioning and portfolio — 19 October 2026
+
+Added three owner-confirmed AI platform projects: DukaPilot, Her Africa Table and CaseReady. Platform work and event experiences are separate sections, and the two original events/article paths remain. No training or event history was invented for the platforms. Platform artwork is typographic, with public website links. Added homepage AI consulting/training and service offerings, updated About/metadata, and an optional allowlisted inquiry interest.
+
+Validation: 62 application checks and 84 local HTTP checks passed, including platform/event separation, preserved archive content, three new detail routes, training preselection and saved inquiry interest. Seven affected page/route variants checked at 1440/768/390/320px (28 states): no horizontal overflow. Work index visually reviewed on desktop and mobile. No external mail sent during tests.

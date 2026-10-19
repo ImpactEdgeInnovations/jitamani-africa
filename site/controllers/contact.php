@@ -2,7 +2,9 @@
 declare(strict_types=1);
 
 return function ($kirby, $site, $page) {
-    $errors = []; $errorStatus = 422; $values = ['name' => '', 'email' => '', 'phone' => '', 'message' => ''];
+    $errors = []; $errorStatus = 422; $values = ['name' => '', 'email' => '', 'phone' => '', 'interest' => '', 'message' => ''];
+    $interest = get('interest', '');
+    if (is_string($interest) && array_key_exists($interest, JitamaniInquiries::interests())) $values['interest'] = $interest;
     $success = $kirby->session()->pull('ja.inquiry.success');
     if (option('ja.demo')) {
         // A disposable review deployment must not collect or email inquiries.

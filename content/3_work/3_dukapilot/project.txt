@@ -1,0 +1,49 @@
+Title: DukaPilot
+
+----
+
+Sector: Retail & small business
+
+----
+
+Platformtheme: retail
+
+----
+
+Description: An AI-powered retail business platform developed by Jitamani Africa.
+
+----
+
+Intro: AI-powered tools for the everyday work of running a shop.
+
+----
+
+Text: DukaPilot brings stock, sales, staff access and online orders into one retail workspace. Its public product description includes AI business advice based on shop records and voice-assisted sales.
+
+----
+
+Brief: Make everyday retail operations easier to manage, with practical AI support built into the workflow.
+
+----
+
+Delivery: A digital platform connecting retail operations, an online store and AI-assisted business support.
+
+----
+
+Externalurl: https://dukapilot.store
+
+----
+
+Category: AI & digital platform
+
+----
+
+Worktype: platform
+
+----
+
+Role: Platform development by Jitamani Africa.
+
+----
+
+Location: Digital platform

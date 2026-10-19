@@ -1,0 +1,49 @@
+Title: CaseReady
+
+----
+
+Sector: Records & private finance
+
+----
+
+Platformtheme: records
+
+----
+
+Description: CaseReady, an AI-powered private-finance records platform developed by Jitamani Africa.
+
+----
+
+Intro: AI-supported workflows for evidence, agreements and private-finance records.
+
+----
+
+Text: CaseReady provides a digital workspace for verification records, agreements, evidence and case tracking in African private finance. Its public website describes an in-app AI copilot.
+
+----
+
+Brief: Bring structured records and supporting evidence together across a private-finance workflow.
+
+----
+
+Delivery: An AI-powered platform with evidence records, agreement workflows and in-app guidance.
+
+----
+
+Externalurl: https://caseready.africa
+
+----
+
+Category: AI & digital platform
+
+----
+
+Worktype: platform
+
+----
+
+Role: Platform development by Jitamani Africa.
+
+----
+
+Location: Digital platform

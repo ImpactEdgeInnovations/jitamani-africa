@@ -2,7 +2,7 @@ Title: Our Work
 
 ----
 
-Description: Explore event experiences and selected stories from the Jitamani Africa archive.
+Description: AI-powered platforms developed by Jitamani Africa, alongside our events and experiences.
 
 ----
 
@@ -14,7 +14,7 @@ Headlineaccent: brought to life.
 
 ----
 
-Intro: A selection of experiences, collaborations and moments from our work.
+Intro: From AI-powered platforms to shared experiences. Explore what we build and what we bring to life.
 
 ----
 

@@ -43,7 +43,7 @@ class Page(HTMLParser):
         if tag == 'img': self.images.append(a)
         if tag == 'input' and a.get('name') == 'csrf': self.csrf = a['value']
 
-routes = ['/', '/about', '/services', '/work', '/contact', '/work/the-chef-and-the-cook', '/work/cocktail-takeover', '/blogs', '/privacy', '/blogs/exploring-the-new-basque-cuisine-through-molecular-gastronomy-at-the-chef-and-the-cook', '/blogs/global-cocktail-culture-meets-nairobi-a-sensational-pop-up-bar-takeover-by-jitamani-africa']
+routes = ['/', '/about', '/services', '/work', '/contact', '/work/the-chef-and-the-cook', '/work/cocktail-takeover', '/work/dukapilot', '/work/her-africa-table', '/work/caseready', '/blogs', '/privacy', '/blogs/exploring-the-new-basque-cuisine-through-molecular-gastronomy-at-the-chef-and-the-cook', '/blogs/global-cocktail-culture-meets-nairobi-a-sensational-pop-up-bar-takeover-by-jitamani-africa']
 images = set()
 for path in routes:
     status, headers, raw = request(path)
@@ -70,7 +70,8 @@ check(status == 200 and len(root) == len(routes), 'Sitemap contains all public p
 status, _, raw = request('/robots.txt')
 check(status == 200 and b'Disallow: /' in raw, 'Local robots disallows indexing')
 
-status, _, raw = request('/contact')
+status, _, raw = request('/contact?interest=ai-training')
+check(b'value="ai-training" selected' in raw, 'Training CTA preselects contact interest')
 check(b'email delivery is disabled' in raw, 'Contact form is in local-only mode before submission')
 csrf = Page(raw.decode()).csrf
 check(bool(csrf), 'CSRF token generated')
@@ -78,10 +79,11 @@ status, _, raw = request('/contact', {'name': 'Local Test', 'email': 'local@exam
 check(status == 403 and b'form has expired' in raw, 'Invalid CSRF token rejected')
 status, _, raw = request('/contact', {'name': '<script>example</script>', 'email': 'bad-email', 'message': 'short', 'csrf': csrf})
 check(status == 422 and b'valid email address' in raw and b'value="<script>' not in raw, 'Server validation and escaped redisplay')
-status, _, raw = request('/contact', {'name': 'Local Test', 'email': 'local@example.test', 'phone': '', 'message': 'This is a synthetic inquiry from the local smoke test.', 'csrf': csrf})
+status, _, raw = request('/contact', {'name': 'Local Test', 'email': 'local@example.test', 'phone': '', 'interest': 'ai-training', 'message': 'This is a synthetic inquiry from the local smoke test.', 'csrf': csrf})
 check(status == 200 and b'Your test is saved.' in raw and b'No email was sent' in raw, 'Post/redirect/get confirms a locally saved inquiry without sending email')
 records = sorted((Path(__file__).resolve().parents[1] / 'storage/inquiries').glob('inquiry-*.json'), key=lambda p: p.stat().st_mtime)
 check(bool(records) and json.loads(records[-1].read_text())['state'] == 'local-test', 'HTTP submission has a durable local recovery copy')
+check(json.loads(records[-1].read_text())['interest'] == 'ai-training', 'Training interest retained with the inquiry')
 status, _, raw = request('/contact')
 check(b'Your test is saved.' not in raw and b'name="message"' in raw, 'Refreshing does not resubmit or repeat success')
 status, _, raw = request('/panel')

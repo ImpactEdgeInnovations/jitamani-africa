@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Description: Meet Jitamani Africa, a women-led business development and events consultancy based in Kenya.
+Description: Meet Jitamani Africa, a women-led consultancy in Kenya connecting practical AI, business development and memorable experiences.
 
 ----
 
@@ -14,11 +14,11 @@ Headlineaccent: grounded in purpose.
 
 ----
 
-Intro: A women-led business development and events consultancy based in Kenya.
+Intro: A women-led consultancy connecting practical AI, business development and thoughtfully delivered experiences.
 
 ----
 
-Text: Jitamani Africa brings together strategic thinking and creative execution. We work across business development, events, marketing and sales, with an interest in the people and ideas shaping Africa’s creative and entrepreneurial landscape.
+Text: Jitamani Africa brings together strategic thinking and creative execution. We develop AI-powered platforms and help organisations explore AI through consulting and professional training. Our work also spans business development, events, marketing and sales, with people and purpose at its centre.
 
 ----
 

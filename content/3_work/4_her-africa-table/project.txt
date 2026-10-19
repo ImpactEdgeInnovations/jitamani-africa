@@ -1,0 +1,49 @@
+Title: Her Africa Table
+
+----
+
+Sector: Community & experiences
+
+----
+
+Platformtheme: community
+
+----
+
+Description: Her Africa Table, an AI-powered community platform developed by Jitamani Africa.
+
+----
+
+Intro: An AI-powered platform connecting community and shared experiences.
+
+----
+
+Text: Her Africa Table brings community and experiences into a digital platform. AI is part of the platform, developed by Jitamani Africa.
+
+----
+
+Brief: Support connection and participation through a digital community experience.
+
+----
+
+Delivery: An AI-powered community platform. This project story covers platform development.
+
+----
+
+Externalurl: https://herafricatable.com
+
+----
+
+Category: AI & digital platform
+
+----
+
+Worktype: platform
+
+----
+
+Role: Platform development by Jitamani Africa.
+
+----
+
+Location: Digital platform

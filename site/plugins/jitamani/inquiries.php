@@ -3,6 +3,11 @@ declare(strict_types=1);
 
 final class JitamaniInquiries
 {
+    public static function interests(): array
+    {
+        return ['ai-consulting' => 'AI consulting', 'ai-training' => 'Professional AI training', 'ai-development' => 'AI platform development', 'business-development' => 'Business development', 'events' => 'Events & experiences', 'marketing' => 'Marketing', 'sales' => 'Sales', 'other' => 'Something else'];
+    }
+
     public static function validate(array $input): array
     {
         $errors = [];
@@ -10,6 +15,8 @@ final class JitamaniInquiries
         if (!filter_var($input['email'] ?? '', FILTER_VALIDATE_EMAIL) || strlen($input['email'] ?? '') > 254) $errors['email'] = 'Please enter a valid email address.';
         if (mb_strlen($input['phone'] ?? '') > 40 || preg_match('/[\r\n]/', $input['phone'] ?? '')) $errors['phone'] = 'Please check your phone number.';
         if (mb_strlen($input['message'] ?? '') < 10 || mb_strlen($input['message'] ?? '') > 5000) $errors['message'] = 'Please tell us a little more (10–5,000 characters).';
+        $interest = $input['interest'] ?? '';
+        if (!is_string($interest) || ($interest !== '' && !array_key_exists($interest, self::interests()))) $errors['interest'] = 'Please choose one of the listed services.';
         return $errors;
     }
 
@@ -59,10 +66,11 @@ final class JitamaniInquiries
         $mail = option('ja.mail');
         if (($mail['mode'] ?? '') === 'log' && option('ja.local')) return;
         foreach (['from', 'to', 'host', 'username', 'password'] as $key) if (empty($mail[$key])) throw new RuntimeException('Mail is not configured');
+        $interest = self::interests()[$record['interest'] ?? ''] ?? 'Not specified';
         kirby()->email([
             'from' => $mail['from'], 'to' => $mail['to'], 'replyTo' => $record['email'],
             'subject' => 'Website inquiry · ' . $record['id'],
-            'body' => ['text' => "Name: {$record['name']}\nEmail: {$record['email']}\nPhone: {$record['phone']}\n\n{$record['message']}\n\nReference: {$record['id']}"],
+            'body' => ['text' => "Name: {$record['name']}\nEmail: {$record['email']}\nPhone: {$record['phone']}\nInterest: {$interest}\n\n{$record['message']}\n\nReference: {$record['id']}"],
             'transport' => ['type' => 'smtp', 'host' => $mail['host'], 'port' => $mail['port'], 'security' => $mail['security'], 'auth' => true, 'username' => $mail['username'], 'password' => $mail['password']],
         ]);
     }

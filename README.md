@@ -1,6 +1,6 @@
 # Jitamani Africa
 
-A small, bespoke Kirby website based on the approved editorial design: warm ivory, ink, deep teal and wine accents; self-hosted Newsreader and Inter; real photographs from the existing website. No frontend framework, Node server, database service, CRM or custom admin is needed.
+A small, bespoke Kirby website for AI consulting, professional training, business services and events. The approved design uses warm ivory, deep aubergine, upright self-hosted Inter and original event photography. No frontend framework, Node server, database service, CRM or custom admin is needed.
 
 ## Run locally
 
@@ -22,7 +22,7 @@ The custom router protects private project directories while allowing Kirby to g
 ## Pages and editing
 
 - Home, About, Services, Our Work and Contact are the five main pages.
-- `/work/{slug}` contains project stories.
+- `/work/{slug}` contains project stories, grouped into AI & Digital Platforms and Events & Experiences.
 - `/blogs` and both original article URLs are preserved.
 - `/privacy`, `/sitemap.xml`, `/robots.txt` and a designed 404 are included.
 - Open `/panel` locally to create the owner's first account. No default/shared credentials are shipped. The owner sets their password themselves.

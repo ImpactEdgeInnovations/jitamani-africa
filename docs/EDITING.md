@@ -40,3 +40,12 @@ Home includes a short company introduction with editable heading and text. Uploa
 Projects include optional idea, role, delivery and outcome fields. Empty sections are omitted from the public page. Only publish responsibilities and outcomes you can substantiate; no outcome figures are required. The existing Chef and The Cook article does not specify Jitamani’s exact responsibilities, so its role section remains blank.
 
 The mobile WhatsApp link uses the contact number already stored in site settings. It hides while the contact form has focus or the navigation menu is open.
+
+
+## AI platforms and event stories
+
+Our Work has two sections. Select **AI & Digital Platform** for software projects and **Event & Experience** for event work. Existing events remain in the event section. Platform projects have a sector, title-artwork colour and live HTTPS URL; they do not require an event photograph. The platform title treatments are editorial artwork, not product screenshots or original product logos.
+
+The owner confirmed DukaPilot, Her Africa Table and CaseReady as AI-powered platforms developed by Jitamani Africa. Their entries do not claim associated events or past AI-training engagements. Keep future results, testimonials and training case studies grounded in actual engagements.
+
+Home has editable AI consulting/training text. Services includes AI for Business and Professional AI Training. Training links preselect the inquiry interest. The optional contact interest is retained in inquiry records and included in the email. The Railway demo continues to disable collection and displays the selected interest for context.
