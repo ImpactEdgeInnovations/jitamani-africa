@@ -1166,7 +1166,7 @@ figcaption {
 .home-hero-photo img { object-position:50% 72%; }
 .home-introduction { display:grid; grid-template-columns:1fr 2fr; gap:48px; padding-block:56px; border-bottom:1px solid var(--line); }
 .home-introduction .eyebrow { padding-top:8px; }
-.introduction-brand { display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+.introduction-brand { display:flex; flex-direction:column; align-items:center; gap:12px; }
 .introduction-monogram { width:min(100%,240px); height:auto; filter:url(#ja-intro-colors); }
 .home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:620px; }
 .home-introduction p:not(.eyebrow) { max-width:660px; margin-block:20px; color:var(--muted); }
