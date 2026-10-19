@@ -167,6 +167,8 @@ main:focus {
   justify-content:space-between;
   gap:32px
 }
+.header-brand { display:inline-flex; align-items:center; gap:8px; flex-shrink:0; }
+.header-monogram { width:66px; height:66px; flex-shrink:0; filter:url(#ja-header-colors); }
 .wordmark {
   font-weight:600;
   font-size:27px;
@@ -885,6 +887,8 @@ figcaption {
   .wordmark {
     font-size:23px
   }
+  .header-brand { gap:6px; }
+  .header-monogram { width:54px; height:54px; }
   .menu-toggle:not([hidden]) {
     display:flex
   }
@@ -903,7 +907,7 @@ figcaption {
     display:none;
     position:absolute;
     z-index:10;
-    top:83px;
+    top:100%;
     left:calc(-1*var(--gutter));
     right:calc(-1*var(--gutter));
     width:auto;

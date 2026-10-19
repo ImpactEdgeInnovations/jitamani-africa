@@ -19,13 +19,17 @@ $og = $site->file('dining.png');
   <?php if ($og): ?><meta property="og:image" content="<?= esc($og->resize(1200)->url(), 'attr') ?>"><?php endif ?>
   <link rel="icon" href="<?= url('assets/icons/favicon.svg') ?>" type="image/svg+xml">
   <link rel="preload" href="<?= url('assets/fonts/inter-600.ttf') ?>" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=12">
+  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=13">
   <script src="<?= url('assets/js/site.js') ?>?v=2" defer></script>
 </head>
 <body class="page-<?= esc($page->intendedTemplate()->name(), 'attr') ?>">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
-  <a class="wordmark" href="<?= $site->url() ?>" aria-label="Jitamani Africa home"><span>Jitamani</span><span>Africa</span></a>
+  <a class="header-brand" href="<?= $site->url() ?>" aria-label="Jitamani Africa home">
+    <svg class="brand-color-filter" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><filter id="ja-header-colors" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="table" tableValues=".968628 .196079"/><feFuncG type="table" tableValues=".952942 .121569"/><feFuncB type="table" tableValues=".917648 .168628"/></feComponentTransfer></filter></defs></svg>
+    <img class="header-monogram" src="<?= url('assets/motion/ja-still.png') ?>" alt="" width="800" height="800" decoding="async">
+    <span class="wordmark"><span>Jitamani</span><span>Africa</span></span>
+  </a>
   <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden><span data-menu-label>Menu</span><span class="menu-lines" aria-hidden="true"></span></button>
   <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
     <?php foreach (['home' => 'Home', 'about' => 'About', 'services' => 'Services', 'work' => 'Our Work', 'contact' => 'Contact'] as $id => $label): $item = page($id); ?>
