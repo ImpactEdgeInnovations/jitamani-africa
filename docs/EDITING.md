@@ -62,3 +62,6 @@ Home leads with bespoke consultancy and editable sector text. Its compact digita
 The homepage digital-project links show each project's editable **Sector** beneath its title. Keep it short. That section uses a warmer paper background; the main page layout and colours remain consistent. Logo sizing adjusts to the artwork proportions automatically, with slightly stronger monochrome contrast. Keep the source artwork intact.
 
 Sections and project features enter once with a small fade and rise. Content remains visible without JavaScript; reduced-motion visitors see a static page. Project photos receive a gentle desktop hover zoom, and service rows and links provide matching hover and keyboard-focus feedback. The brand strip retains Pause, focus/hover pause and reduced-motion scrolling. Its small logo files load together when the row enters view so scrolling does not expose unloaded artwork. No new editor controls are needed.
+
+
+The hero has one CSS entrance on page load: its eyebrow fades in, the complete headline resolves from a light 3px blur while rising 8px over 650ms, and the description and button fade in together after 150ms. Text stays as accessible HTML. It does not retype or loop. The default state is sharp and visible; reduced-motion visitors receive no entrance animation.

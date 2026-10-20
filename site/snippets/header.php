@@ -19,7 +19,7 @@ $og = $site->file('dining.png');
   <?php if ($og): ?><meta property="og:image" content="<?= esc($og->resize(1200)->url(), 'attr') ?>"><?php endif ?>
   <link rel="icon" href="<?= url('assets/icons/favicon.svg') ?>" type="image/svg+xml">
   <link rel="preload" href="<?= url('assets/fonts/inter-600.ttf') ?>" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=17">
+  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=18">
   <script src="<?= url('assets/js/site.js') ?>?v=4" defer></script>
 </head>
 <body class="page-<?= esc($page->intendedTemplate()->name(), 'attr') ?>">
