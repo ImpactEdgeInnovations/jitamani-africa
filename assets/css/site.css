@@ -1292,3 +1292,53 @@ figcaption {
  .home-digital h2 { font-size:29px; }
  .page-work .platform-showcase { padding-bottom:40px; }
 }
+
+
+/* A restrained finishing pass: shared rhythm, natural feedback and one-time reveals. */
+:root { --paper-warm:#f0e9df; --interaction-wash:rgba(153,73,47,.055); }
+@keyframes section-enter {
+  from { opacity:.35; transform:translateY(12px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@media(prefers-reduced-motion:no-preference) {
+  .is-revealed { animation:section-enter .45s cubic-bezier(.2,.7,.2,1) both; }
+}
+.primary-nav a { transition:border-color .2s ease, color .2s ease; }
+.text-link,.light-link,.whatsapp-link { transition:color .2s ease, border-color .2s ease; }
+.text-link svg,.light-link svg,.whatsapp-link svg,.button svg,
+.digital-project-links > a svg,.service-index svg { transition:transform .2s ease; }
+.text-link:is(:hover,:focus-visible),.light-link:is(:hover,:focus-visible),.whatsapp-link:is(:hover,:focus-visible) { border-bottom-color:currentColor; }
+.text-link:is(:hover,:focus-visible) svg,.light-link:is(:hover,:focus-visible) svg,
+.whatsapp-link:is(:hover,:focus-visible) svg,.button:is(:hover,:focus-visible) svg { transform:translate(3px,-3px); }
+.button { transition:background .2s ease, border-color .2s ease, color .2s ease; }
+.button:is(:hover,:focus-visible) { background:var(--wine); border-color:var(--wine); }
+.home-hero .button:is(:hover,:focus-visible) { background:#ead9ca; border-color:#ead9ca; }
+.service-index > a { position:relative; isolation:isolate; transition:color .2s ease; }
+.service-index > a::before { content:''; position:absolute; inset:0 -12px; background:var(--interaction-wash); opacity:0; transition:opacity .2s ease; z-index:-1; }
+.service-index > a:is(:hover,:focus-visible) { color:var(--wine); }
+.service-index > a:is(:hover,:focus-visible)::before { opacity:1; }
+.service-index > a:is(:hover,:focus-visible) svg { transform:translateX(4px); }
+.project-photo img { transition:transform .6s cubic-bezier(.2,.7,.2,1), filter .2s ease; }
+.project-photo:focus-visible img { filter:brightness(.97); }
+@media(hover:hover) and (pointer:fine) {
+  .project-photo:hover img { transform:scale(1.025); filter:brightness(.98); }
+}
+.home-digital-band { background:var(--paper-warm); margin-top:40px; }
+.home-digital-band .home-digital { margin-top:0; border:0; padding-block:38px; }
+.digital-project-links > a:not(.text-link) { transition:color .2s ease, border-color .2s ease; }
+.digital-project-links > a:not(.text-link):is(:hover,:focus-visible) { color:var(--wine); border-color:var(--wine); }
+.digital-project-links > a:not(.text-link):is(:hover,:focus-visible) svg { transform:translate(3px,-3px); }
+.digital-project-label { display:flex; flex-direction:column; gap:3px; }
+.digital-project-label small { font-size:12px; color:var(--muted); line-height:1.5; }
+.brand-logo img { opacity:.88; filter:grayscale(1) contrast(1.08); }
+.brand-logo--white-art img { filter:brightness(0); opacity:.76; }
+.brand-logo--compact img { max-height:48px; max-width:104px; }
+.brand-logo--wide img { max-width:138px; max-height:34px; }
+.brand-motion-toggle { min-height:44px; transition:color .2s ease; }
+.brand-motion-toggle:is(:hover,:focus-visible) { color:var(--wine); text-decoration:underline; }
+@media(max-width:760px) {
+  .home-digital-band { margin-top:30px; }
+  .home-digital-band .home-digital { padding-block:30px; }
+  .brand-logo--compact img { max-height:42px; max-width:84px; }
+  .brand-logo--wide img { max-width:108px; max-height:30px; }
+}

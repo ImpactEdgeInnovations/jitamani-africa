@@ -27,6 +27,28 @@
   }
   document.querySelector('[data-form-errors]')?.focus();
 
+  // Reveal once, without hiding content before JavaScript or the observer runs.
+  // Text and anchor destinations remain available if enhancement is unavailable.
+  const revealPreference = matchMedia('(prefers-reduced-motion: reduce)');
+  if ('IntersectionObserver' in window && !revealPreference.matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const target = entry.target;
+        if (!revealPreference.matches) target.classList.add('is-revealed');
+        observer.unobserve(target);
+      });
+    }, { threshold: 0, rootMargin: '0px 0px -32px 0px' });
+    const targets = document.querySelectorAll('.home-introduction, .selected-work .section-heading, .project-preview, .home-digital > div, .home-services, .about-story, .service-detail, .platform-preview, .case-study-row');
+    targets.forEach(target => {
+      // Anything already visible (including a direct hash destination) stays still.
+      if (target.getBoundingClientRect().top >= window.innerHeight) observer.observe(target);
+    });
+    revealPreference.addEventListener('change', () => {
+      if (revealPreference.matches) observer.disconnect();
+    });
+  }
+
   const strip = document.querySelector('[data-brand-strip]');
   if (strip) {
     const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
@@ -49,7 +71,11 @@
     configure();
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(entries => {
-        strip.classList.toggle('is-offscreen', !entries[0].isIntersecting);
+        const visible = entries[0].isIntersecting;
+        strip.classList.toggle('is-offscreen', !visible);
+        // Compositor transforms do not consistently trigger native lazy loading.
+        // Load the small, self-hosted collection once the row comes into view.
+        if (visible) strip.querySelectorAll('img[loading="lazy"]').forEach(image => { image.loading = 'eager'; });
       }).observe(strip);
     }
   }

@@ -12,8 +12,11 @@ if ($brands->isEmpty()) return;
     <div class="brand-track">
       <?php foreach ([false, true] as $duplicate): ?>
       <ul class="brand-list" role="list"<?= $duplicate ? ' aria-hidden="true" hidden' : '' ?>>
-        <?php foreach ($brands as $brand): $logo = $brand->logo()->toFile(); ?>
-        <li class="brand-logo<?= $logo && $brand->dark()->toBool() ? ' brand-logo--white-art' : '' ?>">
+        <?php foreach ($brands as $brand):
+          $logo = $brand->logo()->toFile();
+          $shape = $logo ? ($logo->ratio() < 1.2 ? 'compact' : ($logo->ratio() > 3 ? 'wide' : 'standard')) : 'name';
+        ?>
+        <li class="brand-logo brand-logo--<?= $shape ?><?= $logo && $brand->dark()->toBool() ? ' brand-logo--white-art' : '' ?>">
           <?php if ($logo): ?><img src="<?= $logo->url() ?>" alt="<?= $brand->name()->esc() ?>" width="<?= $logo->width() ?>" height="<?= $logo->height() ?>" loading="lazy" decoding="async"><?php else: ?><span class="brand-name"><?= $brand->name()->esc() ?></span><?php endif ?>
         </li>
         <?php endforeach ?>

@@ -6,7 +6,7 @@ Open `/panel`. The owner creates the first administrator locally; everyday edito
 
 The **Website content** tab shows the five main pages and supporting archive/privacy pages. Select a page, update its text and save. The layout, colours and typography remain consistent. Headline accent fields provide the wine-coloured phrase; keep them short and review on a phone.
 
-Home includes the introduction, hero photograph and caption, selected-work heading and services introduction. About contains the company introduction and two approach sections. Services has four editable rows with title, summary, audience and activities (one activity per line). Contact controls its headline and introduction.
+Home includes the introduction, hero photograph and caption, selected-work heading and services introduction. About contains the company introduction and two approach sections. Services has six editable rows with title, summary, audience and activities (one activity per line). Contact controls its headline and introduction.
 
 ## Photographs
 
@@ -55,3 +55,10 @@ Our Work has two sections. Select **AI & Digital Platform** for software project
 The owner confirmed DukaPilot, Her Africa Table and CaseReady as AI-powered platforms developed by Jitamani Africa. Their entries do not claim associated events or past AI-training engagements. Keep future results, testimonials and training case studies grounded in actual engagements.
 
 Home leads with bespoke consultancy and editable sector text. Its compact digital-work feature links to the three platform projects. Services includes AI for Business and Professional AI Training alongside the core consultancy disciplines. Training links preselect the inquiry interest. The optional contact interest is retained in inquiry records and included in the email. The Railway demo continues to disable collection and displays the selected interest for context.
+
+
+## Visual finishing details
+
+The homepage digital-project links show each project's editable **Sector** beneath its title. Keep it short. That section uses a warmer paper background; the main page layout and colours remain consistent. Logo sizing adjusts to the artwork proportions automatically, with slightly stronger monochrome contrast. Keep the source artwork intact.
+
+Sections and project features enter once with a small fade and rise. Content remains visible without JavaScript; reduced-motion visitors see a static page. Project photos receive a gentle desktop hover zoom, and service rows and links provide matching hover and keyboard-focus feedback. The brand strip retains Pause, focus/hover pause and reduced-motion scrolling. Its small logo files load together when the row enters view so scrolling does not expose unloaded artwork. No new editor controls are needed.

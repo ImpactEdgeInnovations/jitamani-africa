@@ -22,10 +22,12 @@
   <div class="project-grid"><?php foreach (ja_events()->limit(2) as $project) snippet('project-preview', compact('project')) ?></div>
 </section>
 <?php snippet('brands') ?>
+<div class="home-digital-band">
 <section class="home-digital wrap" aria-labelledby="digital-work-title">
   <div><p class="eyebrow">Another part of our work</p><h2 id="digital-work-title">Digital platforms, built with purpose.</h2><p>Our AI and technology capabilities include platforms developed for business and community.</p></div>
-  <div class="digital-project-links"><?php foreach (ja_platforms() as $project): ?><a href="<?= $project->url() ?>"><?= $project->title()->esc() ?> <?= ja_icon('diagonal') ?></a><?php endforeach ?><a class="text-link" href="<?= page('work')->url() ?>#platforms">Explore our digital work <?= ja_icon('diagonal') ?></a></div>
+  <div class="digital-project-links"><?php foreach (ja_platforms() as $project): ?><a href="<?= $project->url() ?>"><span class="digital-project-label"><span><?= $project->title()->esc() ?></span><?php if ($project->sector()->isNotEmpty()): ?><small><?= $project->sector()->esc() ?></small><?php endif ?></span> <?= ja_icon('diagonal') ?></a><?php endforeach ?><a class="text-link" href="<?= page('work')->url() ?>#platforms">Explore our digital work <?= ja_icon('diagonal') ?></a></div>
 </section>
+</div>
 <section class="home-services wrap" aria-labelledby="home-services-title">
   <h2 class="eyebrow" id="home-services-title">How we can help</h2>
   <div class="service-index"><?php foreach (ja_services() as $i => $service): ?><a href="<?= page('services')->url() ?>#<?= $service->slug()->esc() ?>"><span class="service-number">0<?= $i + 1 ?></span><span><?= $service->title()->esc() ?></span><?= ja_icon() ?></a><?php endforeach ?></div>
