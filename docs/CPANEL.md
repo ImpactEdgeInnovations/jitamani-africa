@@ -1,6 +1,6 @@
 # cPanel setup and controlled launch
 
-This is a deployment guide, not evidence of a completed live deployment. The existing domain, DNS, business email and old application have not been changed.
+The primary website was deployed to cPanel on 25 October 2026. See [the migration record](MIGRATION-2026-10-25.md) for the actual release, backups, verification and remaining acceptance items. The instructions below remain the procedure for future deployments; they are not evidence that every operational acceptance item has been completed.
 
 ## 1. Confirm the account
 

@@ -8,6 +8,9 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
+# Retain the original contact form URL.
+RewriteRule ^contacts/?$ /contact [R=301,L]
+
 # Project files and private inquiry recovery records are never public.
 RewriteRule ^(?:vendor|storage|scripts|tests|docs|artifacts|dist)(?:/|$) - [F,L,NC]
 RewriteRule ^(?:composer\.(?:json|lock)|router\.php|README\.md|AGENTS\.md|LICENSE)(?:$|/) - [F,L,NC]
