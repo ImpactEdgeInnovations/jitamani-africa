@@ -10,7 +10,7 @@ The build uses original image files from the existing public Jitamani website, n
 
 Inter and Newsreader were obtained through Google Fonts. Their SIL Open Font License files are in `assets/fonts/`. Fonts are self-hosted; there are no external font requests. The current design uses only Inter 400/600 for consistent upright headings and body text. Newsreader files remain in the repository but are not loaded.
 
-The header pairs the upright typographic wordmark with the supplied JA monogram, recolored aubergine on ivory. It uses the same static `ja-still.png` frame as the closing fallback, with its own color filter and no animation. The simple JA favicon remains a typographic navigation asset, not a recreation of the original JA logo.
+The header pairs the upright typographic wordmark with the supplied JA monogram, recolored aubergine on ivory. It uses the same static `ja-still.png` frame as the closing fallback, with its own color filter and no animation. The browser favicon and Apple touch icon use a centred, downscaled crop of the owner-supplied `Jitamani Logo Black (1).png`, preserving the approved mark at small sizes.
 
 The owner supplied `2.webm` and `loop.webm` on 19 October 2026 and approved the recolored `2.webm` concept. `assets/motion/ja-reveal.webm` preserves that original supplied video (78,437 bytes). The homepage closing invitation maps its black/white tones to aubergine/ivory using an SVG color filter. `ja-still.png` is a captured complete-monogram frame from the same clip, used without JavaScript, for reduced motion, after the one-time reveal and if video playback fails. Video data loads only when the mark enters view and motion is permitted. The existing photography remains unchanged.
 

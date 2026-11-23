@@ -17,7 +17,8 @@ $og = $site->file('dining.png');
   <meta property="og:type" content="<?= $page->intendedTemplate()->name() === 'article' ? 'article' : 'website' ?>">
   <meta property="og:url" content="<?= esc(ja_canonical($page), 'attr') ?>">
   <?php if ($og): ?><meta property="og:image" content="<?= esc($og->resize(1200)->url(), 'attr') ?>"><?php endif ?>
-  <link rel="icon" href="<?= url('assets/icons/favicon.svg') ?>" type="image/svg+xml">
+  <link rel="icon" href="<?= url('assets/icons/jitamani-mark.png') ?>" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="<?= url('assets/icons/apple-touch-icon.png') ?>" sizes="180x180">
   <link rel="preload" href="<?= url('assets/fonts/inter-600.ttf') ?>" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=18">
   <script src="<?= url('assets/js/site.js') ?>?v=4" defer></script>
