@@ -1,0 +1,33 @@
+Title: AI or Die Tour
+
+----
+
+Description: AI or Die Tour, a Jitamani Africa event and experience.
+
+----
+
+Category: Tour
+
+----
+
+Location:
+
+----
+
+Intro: A tour bringing people together around ideas, culture and technology.
+
+----
+
+Text: AI or Die Tour is part of Jitamani Africa’s event and experience portfolio.
+
+----
+
+Cover: ai-or-die-tour.jpg
+
+----
+
+Caption: A Jitamani Africa archive visual.
+
+----
+
+Orderlabel: 04

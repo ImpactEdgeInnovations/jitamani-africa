@@ -20,8 +20,8 @@ $og = $site->file('dining.png');
   <link rel="icon" href="<?= url('assets/icons/jitamani-mark.png') ?>" type="image/png" sizes="512x512">
   <link rel="apple-touch-icon" href="<?= url('assets/icons/apple-touch-icon.png') ?>" sizes="180x180">
   <link rel="preload" href="<?= url('assets/fonts/inter-600.ttf') ?>" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=18">
-  <script src="<?= url('assets/js/site.js') ?>?v=4" defer></script>
+  <link rel="stylesheet" href="<?= url('assets/css/site.css') ?>?v=19">
+  <script src="<?= url('assets/js/site.js') ?>?v=5" defer></script>
 </head>
 <body class="page-<?= esc($page->intendedTemplate()->name(), 'attr') ?>">
 <a class="skip-link" href="#main">Skip to content</a>

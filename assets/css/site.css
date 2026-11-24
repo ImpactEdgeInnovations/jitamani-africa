@@ -1188,30 +1188,34 @@ figcaption {
 .home-introduction h2 { font-size:clamp(28px,2.6vw,38px); max-width:420px; }
 .home-introduction p:not(.eyebrow) { max-width:660px; margin-block:16px; color:var(--muted); }
 .home-introduction .introduction-copy > p:first-child { margin-top:0; }
-.brand-strip { padding-top:28px; margin-top:32px; border-top:1px solid var(--line); }
-.brand-strip-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:16px; }
-.brand-strip-heading h2 { font-size:12px; font-weight:400; letter-spacing:0; color:var(--muted); line-height:1.5; }
+.brand-strip { padding-top:32px; margin-top:40px; border-top:1px solid var(--line); }
+.brand-strip-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:20px; }
+.brand-strip-heading h2 { font-size:14px; font-weight:500; letter-spacing:-.01em; color:var(--ink); line-height:1.5; }
 .brand-motion-toggle { border:0; background:none; padding:8px 0 8px 12px; font-size:11px; line-height:1.5; color:var(--muted); flex-shrink:0; }
+.brand-deck { display:grid; gap:12px; }
 .brand-viewport { overflow-x:auto; scrollbar-width:thin; }
 .brand-viewport:focus-visible { outline:2px solid var(--wine); outline-offset:5px; }
 .brand-track { display:flex; width:max-content; }
-.brand-list { display:flex; align-items:center; flex-shrink:0; gap:40px; list-style:none; padding:0 40px 0 0; }
+.brand-list { display:flex; align-items:center; flex-shrink:0; gap:34px; list-style:none; padding:0 34px 0 0; }
 .brand-list[hidden] { display:none; }
-.brand-logo { width:148px; height:58px; flex-shrink:0; display:flex; align-items:center; justify-content:center; padding:6px 10px; }
-.brand-logo img { width:auto; height:auto; max-width:100%; max-height:40px; object-fit:contain; filter:grayscale(1); opacity:.7; }
+.brand-logo { width:168px; height:70px; flex-shrink:0; display:flex; align-items:center; justify-content:center; padding:8px 14px; }
+.brand-logo img { width:auto; height:auto; max-width:100%; max-height:48px; object-fit:contain; filter:grayscale(1); opacity:.74; }
 .brand-logo--white-art img { filter:brightness(0); opacity:.62; }
 .brand-name { font-size:13px; line-height:1.5; color:var(--muted); text-align:center; }
 .brand-strip.is-enhanced .brand-viewport { overflow:hidden; mask-image:linear-gradient(to right,transparent,#000 24px,#000 calc(100% - 24px),transparent); }
 .brand-strip.is-enhanced .brand-track { animation:brand-drift var(--brand-duration) linear infinite; }
+.brand-strip.is-enhanced .brand-viewport--reverse .brand-track { animation-name:brand-drift-reverse; }
 .brand-strip:is(:hover,.is-paused,.is-offscreen) .brand-track,.brand-viewport:focus-within .brand-track { animation-play-state:paused; }
 @keyframes brand-drift { to { transform:translateX(-50%); } }
+@keyframes brand-drift-reverse { from { transform:translateX(-50%); } to { transform:translateX(0); } }
 @media(max-width:760px) {
-  .brand-strip { margin-top:26px; padding-top:20px; }
+  .brand-strip { margin-top:30px; padding-top:24px; }
   .brand-strip-heading { gap:12px; margin-bottom:12px; }
-  .brand-strip-heading h2 { font-size:11px; }
-  .brand-list { gap:28px; padding-right:28px; }
-  .brand-logo { width:120px; height:52px; }
-  .brand-logo img { max-height:36px; }
+  .brand-strip-heading h2 { font-size:12px; }
+  .brand-deck { gap:8px; }
+  .brand-list { gap:24px; padding-right:24px; }
+  .brand-logo { width:132px; height:58px; }
+  .brand-logo img { max-height:40px; }
 }
 .page-home .project-caption > span { display:block; margin-top:6px; color:var(--wine); }
 .project-summary { font-size:14px; color:var(--muted); max-width:520px; margin-top:10px; }
@@ -1346,6 +1350,6 @@ figcaption {
 @media(max-width:760px) {
   .home-digital-band { margin-top:30px; }
   .home-digital-band .home-digital { padding-block:30px; }
-  .brand-logo--compact img { max-height:42px; max-width:84px; }
-  .brand-logo--wide img { max-width:108px; max-height:30px; }
+  .brand-logo--compact img { max-height:44px; max-width:94px; }
+  .brand-logo--wide img { max-width:120px; max-height:34px; }
 }

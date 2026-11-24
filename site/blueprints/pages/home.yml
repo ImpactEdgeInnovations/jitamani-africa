@@ -44,7 +44,7 @@ fields:
   brands:
     label: Brands and collaborators
     type: structure
-    help: Brands appear in one moving row below the featured work. Reorder entries to change their display order.
+    help: Brands appear in two moving rows below the featured work. Reorder entries to change their display order.
     columns:
       name:
         width: 2/3

@@ -132,7 +132,7 @@ Brands:
   visible: true
   dark: true
 - name: "ZTN"
-  logo: ""
+  logo: "brand-ztn.webp"
   visible: true
   dark: false
 - name: "Vambo AI"
@@ -153,5 +153,61 @@ Brands:
   dark: false
 - name: "University of Botswana"
   logo: "brand-university-botswana.webp"
+  visible: true
+  dark: false
+- name: "Eko Hotels & Suites"
+  logo: "brand-eko-hotels.jpg"
+  visible: true
+  dark: false
+- name: "NIPAM"
+  logo: "brand-nipam.png"
+  visible: true
+  dark: false
+- name: "ONMT"
+  logo: "brand-onmt.png"
+  visible: true
+  dark: false
+- name: "FilmAid Film Festival"
+  logo: "brand-filmaid-film-festival.webp"
+  visible: true
+  dark: false
+- name: "EduTec"
+  logo: "brand-edutec.png"
+  visible: true
+  dark: false
+- name: "UNAM"
+  logo: "brand-unam.png"
+  visible: true
+  dark: false
+- name: "Cresta Hotels"
+  logo: "brand-cresta-hotels.jpeg"
+  visible: true
+  dark: false
+- name: "Eduvos Johannesburg"
+  logo: "brand-eduvos-johannesburg.png"
+  visible: true
+  dark: false
+- name: "FAK"
+  logo: "brand-fak.png"
+  visible: true
+  dark: false
+- name: "University of Dar es Salaam"
+  logo: "brand-university-dar-es-salaam.png"
+  visible: true
+  dark: false
+- name: "Rotaract Club of Wodiyamado"
+  logo: "brand-rotaract-wodiyamado.png"
+  visible: true
+  dark: false
+- name: "University of Ethiopia"
+  logo: "brand-university-ethiopia.png"
+  visible: true
+  dark: false
+- name: "ALX Rwanda"
+  logo: "brand-alx-rwanda.jpeg"
+  visible: true
+  dark: false
+- name: "University of Ibadan"
+  logo: "brand-university-ibadan.jpeg"
   visible: true
   dark: false

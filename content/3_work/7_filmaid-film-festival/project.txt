@@ -1,0 +1,33 @@
+Title: FilmAid Film Festival
+
+----
+
+Description: FilmAid Film Festival, an audience-facing film programme.
+
+----
+
+Category: Film festival
+
+----
+
+Location:
+
+----
+
+Intro: A film festival programme created around stories, audiences and shared experience.
+
+----
+
+Text: FilmAid Film Festival brought film and audience together through a programme designed for shared cultural experience.
+
+----
+
+Cover: filmaid-film-festival.webp
+
+----
+
+Caption: FilmAid Film Festival logo, supplied by Jitamani Africa.
+
+----
+
+Orderlabel: 02

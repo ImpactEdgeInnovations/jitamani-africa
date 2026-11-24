@@ -39,6 +39,12 @@ fields:
   category:
     label: Type of experience
     type: text
+  orderlabel:
+    label: Portfolio order
+    type: number
+    min: 1
+    step: 1
+    help: Lower numbers appear first in Events & Experiences.
   location:
     type: text
   intro:

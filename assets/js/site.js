@@ -49,18 +49,20 @@
     });
   }
 
-  const strip = document.querySelector('[data-brand-strip]');
-  if (strip) {
+  document.querySelectorAll('[data-brand-strip]').forEach(strip => {
     const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
     const button = strip.querySelector('.brand-motion-toggle');
-    const duplicate = strip.querySelector('[aria-hidden="true"]');
-    const viewport = strip.querySelector('.brand-viewport');
+    const duplicates = [...strip.querySelectorAll('[aria-hidden="true"]')];
+    const viewports = [...strip.querySelectorAll('[data-brand-viewport]')];
     const configure = () => {
       const animate = !motionPreference.matches;
       strip.classList.toggle('is-enhanced', animate);
-      duplicate.hidden = !animate;
+      duplicates.forEach(duplicate => { duplicate.hidden = !animate; });
       button.hidden = !animate;
-      viewport.setAttribute('aria-label', animate ? 'Brands and collaborators; animation pauses while focused' : 'Brands and collaborators; scroll horizontally to explore');
+      viewports.forEach((viewport, index) => {
+        const row = `Brands and collaborators, row ${index + 1} of ${viewports.length}`;
+        viewport.setAttribute('aria-label', animate ? `${row}; animation pauses while focused` : `${row}; scroll horizontally to explore`);
+      });
     };
     button.addEventListener('click', () => {
       const paused = strip.classList.toggle('is-paused');
@@ -78,7 +80,7 @@
         if (visible) strip.querySelectorAll('img[loading="lazy"]').forEach(image => { image.loading = 'eager'; });
       }).observe(strip);
     }
-  }
+  });
 
   const mark = document.querySelector('[data-brand-reveal]');
   const video = mark?.querySelector('video');

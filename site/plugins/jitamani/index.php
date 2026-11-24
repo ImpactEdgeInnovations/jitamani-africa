@@ -44,7 +44,9 @@ function ja_platforms()
 
 function ja_events()
 {
-    return page('work')->children()->listed()->filter(fn ($project) => $project->worktype()->value() !== 'platform');
+    return page('work')->children()->listed()
+        ->filter(fn ($project) => $project->worktype()->value() !== 'platform')
+        ->sortBy('orderlabel', 'asc');
 }
 
 function ja_platform_url($project): ?string

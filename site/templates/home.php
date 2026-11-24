@@ -18,8 +18,8 @@
   <div class="introduction-copy"><p><?= $page->introductiontext()->esc() ?></p><p class="sector-line"><span class="eyebrow">Across sectors</span><?= $page->sectors()->esc() ?></p><a class="text-link" href="<?= page('about')->url() ?>">More about us <?= ja_icon('diagonal') ?></a></div>
 </section>
 <section class="selected-work wrap" aria-labelledby="selected-work-title">
-  <div class="section-heading"><div><p class="eyebrow">Events & experiences</p><h2 id="selected-work-title"><?= $page->workheading()->esc() ?></h2></div><a class="text-link" href="<?= page('work')->url() ?>">View all work <?= ja_icon('diagonal') ?></a></div>
-  <div class="project-grid"><?php foreach (ja_events()->limit(2) as $project) snippet('project-preview', compact('project')) ?></div>
+  <div class="section-heading"><div><p class="eyebrow">Events & experiences</p><h2 id="selected-work-title"><?= $page->workheading()->esc() ?></h2></div><a class="text-link" href="<?= page('work')->url() ?>">View Some of Our Works <?= ja_icon('diagonal') ?></a></div>
+  <div class="project-grid"><?php foreach (ja_events()->limit(4) as $project) snippet('project-preview', compact('project')) ?></div>
 </section>
 <?php snippet('brands') ?>
 <div class="home-digital-band">
